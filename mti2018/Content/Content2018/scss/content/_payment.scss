@@ -1,0 +1,199 @@
+﻿.type-Payment{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    ul{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 3px;
+            .pay{
+                background-color: #666666;
+                padding: 15px 15px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $color-blue;
+                }
+                .icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: $font-main;
+                    font-size: 26px;
+                    line-height: 26px;
+                    color: #ffffff;
+                    width: 100px;
+                    text-align: left;
+                }
+            }
+            .icon-choose{
+                display: none;
+            }
+        }
+        li.active{
+            .pay{
+                background-color: $color-blue;
+            }
+            .icon-choose{
+                display: block;
+                text-align: center;
+                width: 26px;
+                height: 11px;
+                margin: 10px auto 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+#ways-Payment{
+    .bank-wrapper{
+        margin-top: 20px;
+        text-align: center;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 3px;
+                width: 140px;
+                .list-bank{
+                    background-color: #e9e9e9;
+                    border: 1px solid #bebebe;
+                    padding: 10px;
+                    cursor: pointer;
+                    .name{
+                        font-family: $font-main;
+                        font-size: 22px;
+                        line-height: 22px;
+                        color: $color-gray;
+                        text-align: center;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                    .logo{
+                        display: block;
+                        height: 61px;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &:hover{
+                        background-color: #f7f7f7;
+                        .name{
+                            color: $color-blue;
+                        }
+                    }
+                    @media only screen and (max-width: 480px) {
+                        padding: 5px;
+                    }
+                }
+                .icon-choose{
+                    display: none;
+                }
+                @media screen and (max-width: 360px) {
+                    width: 130px;
+                }
+            }
+            li.active{
+                .list-bank{
+                    background-color: #f7f7f7;
+                    .name{
+                        color: $color-blue;
+                    }
+                }
+                .icon-choose{
+                    display: block;
+                    text-align: center;
+                    width: 26px;
+                    height: 11px;
+                    margin: 10px auto 0;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailbank-wrapper{
+    margin: 20px 0;
+    .detail-payment{
+        border: 1px solid #1595d3;
+        padding: 30px 15px;
+        background-color: #fff;
+        width: 100%;
+        margin-bottom: 25px;
+        position: relative;
+        // สำหรับ กสิกร เลือกชำระผ่อนกี่เดือน
+        .logo-bank{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 50px;
+            text-align: center;
+            @media (max-width: 767px) {
+                display: block;
+                margin: auto;
+            }
+        }
+        .list-periodpay{
+            display: inline-block;
+            vertical-align: middle;
+             @media (max-width: 767px) {
+                 display: block;
+             }
+            .title-paymnet{
+                font-size: $font-big;
+		        color: $font-color-title;
+		        font-family: $font-main;
+                margin: 10px 0;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    cursor: pointer;
+                    margin: 20px 0;
+                    text-align: center;
+                    border: 1px solid #cccccc;
+                    color: #666;
+                    font-family: $font-main;
+                    font-size: $font-small;
+                    padding: 5px 10px;
+                    &:hover{
+                        color: #fff;
+                        background-color: #1595d3;
+                        border: 1px solid $color-blue;
+                    }
+                }
+                li.active{
+                    color: #fff;
+                    background-color: #1595d3;
+                    border: 1px solid $color-blue;
+                }
+            }
+        }
+    }
+}

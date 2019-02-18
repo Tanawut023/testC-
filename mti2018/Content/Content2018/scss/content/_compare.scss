@@ -1,0 +1,573 @@
+﻿.main-content-compare{
+	width: 100%;
+	//margin-top:-250px;
+	position: relative;
+	z-index: 9;
+    margin-top:-340px;
+    @media screen and (max-width: 999px) {
+        margin-top: -200px;
+	}
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
+	}
+    .form-left{
+		background-color: #fff;
+		width: 100%;
+		padding:10px;
+		margin-bottom: 20px;
+        @media (max-width: 999px) {
+		    margin-bottom: 0;
+	    }
+	}
+	.form{
+		background-color: #fff;
+		width: 100%;
+		//padding:10px 10px 40px;
+        padding:10px 10px 30px;
+	}
+    .form-wrapper{
+        margin-bottom: 120px;
+    }
+    .footer-form{
+        margin-top: 20px;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                //display: inline-block;
+                display: block;
+                //vertical-align: middle;
+                //margin-right: 15px;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 10px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .icon-i{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    i{
+                        font-size: 30px;
+                        color: #999999;
+                    }
+                }
+                .text{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: $font-main;
+                    font-size: 22px;
+                    line-height: 22px;
+                    color: #999999;
+                    width: 80%;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-action-compare{
+    .btn{
+        @media screen and (max-width: 400px) {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+
+.form-compare{
+    .title-compare{
+        padding-top: 0;
+    }
+    .line-colMB{
+        margin-bottom: 15px;
+    }
+}
+
+.compare-model-wrapper{
+    .header{
+        margin-bottom: 20px;
+        .left{
+            float: left;
+            .name-compare-model{
+                font-family: $font-main;
+                font-size: 30px;
+                line-height: 30px;
+                color: $color-blue;
+            }
+            .desc{
+                font-family: $font-main;
+                font-size: 20px;
+                line-height: 20px;
+                color: $color-gray;
+            }
+        }
+        .right{
+            float: right;
+            .btn{
+                margin-top: 0;
+            }
+            @media only screen and (max-width: 767px) {
+                display: none !important;
+            }
+        }
+    }
+
+    .box-compare-wrapper{
+        .list-compare{
+            position: relative;
+            margin-bottom: 30px;
+            //height: 610px;
+            height: 570px;
+            .btn-custom-insure{
+                margin: 0;
+                width: 100%;
+            }
+            .btn-buy-insure{
+                margin: 0;
+                width: 100%;
+            }
+            .head-wrapper{
+                height: 105px;
+                overflow: hidden;
+                background-color: $color-blue;
+                padding: 10px;
+                .head-inner{
+                    .left{
+                        float: left;
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #ffffff;
+                        width: 60%;
+                        label{
+                            .content-rdo-inline{
+                                padding-left: 30px;
+                                color: #ffffff;
+                                height: 50px;
+                                overflow: hidden;
+                            }
+                        }
+                        input[type=checkbox] {
+	                        display:none;
+                        }
+                        input[type=checkbox] + label{
+	                        background: url("../../images/icon/icon-compare-check.png") no-repeat;
+                            width: auto;
+                            height: auto;
+	                        display:inline-block;
+                            vertical-align: middle;
+	                        padding: 0 0 0 0px;
+                            cursor: pointer;
+                        }
+                        input[type=checkbox]:checked + label
+                        {
+	                        background: url("../../images/icon/icon-compare-checked.png") no-repeat;
+	                        width: auto;
+                            height: auto;
+	                        display:inline-block;
+                            vertical-align: middle;
+	                        padding: 0 0 0 0px;
+                            cursor: pointer;
+                        }
+                    }
+                    .right{
+                        float: right;
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #ffffff;
+                    }
+                }
+                .price-all{
+                    float: right;
+                    .main-price {
+                        font-family: $font-main;
+                        font-size: 36px;
+                        line-height: 24px;
+                        color: #ffffff;
+                        float: left;
+                    }
+                    .point-price {
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 22px;
+                        color: #ffffff;
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                    }
+                    .current {
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 22px;
+                        color: #ffffff;
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .content-wrapper{
+                position: relative;
+                .compare-reduce{
+                    background-color: #ffffff;
+                    border: 1px solid $color-blue;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    z-index: 9;
+                    display: none;
+                    .icon-close{
+                        position: absolute;
+                        top: 0;
+                        right: 10px;
+                        font-size: 28px;
+                        cursor: pointer;
+                        z-index: 9;
+                        i{
+                            color: #666666;
+                        }
+                    }
+                    .box-form-reduce{
+                        //padding:30px 10px 10px
+                        padding:14px 10px 10px;
+                        .action_premiums{
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .detail-protect{
+                    padding: 10px;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            margin-bottom: 5px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                        li.protect{
+                            font-family: $font-main;
+                            font-size: 26px;
+                            line-height: 26px;
+                            color: $color-blue;
+                            .left{
+                                float: left;
+                                .name{
+                                    i{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            .right{
+                                float: right;
+                            }
+                        }
+                        li.no-protect{
+                            font-family: $font-main;
+                            font-size: 26px;
+                            line-height: 26px;
+                            color: #BCBCBC;
+                            .left{
+                                float: left;
+                                .name{
+                                    i{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            .right{
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .detail-more{
+                margin: 10px 0 15px;
+                .row{
+                    margin-left: -6px;
+                    margin-right: -6px;
+                    .col-md-6, col-sm-6, col-xs-6{
+                        padding-left: 6px;
+                        padding-right: 6px;
+                    }
+                }
+                .btn-desc-insure{
+                    margin: 0;
+                    width: 100%;
+                    .text{
+                        font-size: 23px;
+                    }
+                }
+            } 
+        }
+    }
+
+    #btn_compare_insure_mb{
+        display: none;
+        @media only screen and (max-width: 767px) {
+            display: block;
+            width: 100%;
+            background-color: #bbbbbb;
+            position: fixed;
+            padding: 10px;
+            margin: 0 -20px;
+            bottom: 0;
+            z-index: 10;
+            .btn{
+                margin-top: 0;
+                @media only screen and (max-width: 420px) {
+                    width: 220px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// เปรียบเทียบ
+.section-detail-compare{
+    padding: 0 0 20px;
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin: auto;
+        overflow-x: scroll;
+    }
+    //overflow-x: auto;
+    //-webkit-overflow-scrolling: touch;
+    table{
+        margin-bottom: 0;
+        table-layout: fixed;
+        tr{
+            &:nth-child(even){
+				background: #F0F0F0;
+			}
+			&:nth-child(odd){
+				background: #FFF;
+			}
+            td{
+                vertical-align: middle;
+                color: #666;
+                border: none;
+                font-family: $font-main;
+                font-size: $font-small;
+            }
+            td.fixed-column{
+                width: 30%;
+            }
+            .sec-head{
+                font-family: $font-main;
+                line-height: 25px;
+                width: 17.5%;
+                .title-product{
+                    color: #1595d3;
+                    font-size: $font-big;
+                }
+                .title-price{
+                    font-size: $font-small;
+                }
+                .title-insurance{
+                    font-size: $font-small;
+                }
+                .txt-detailproduct{
+                    font-size: $font-small;
+                    color: #fff;
+                    background-color: #f9981c;
+                    padding: 5px;
+                    border-radius: 15px;
+                    margin:5px auto;
+                }
+                .button-detail-wrapper{
+                    margin-bottom: 5px;
+                    .btn{
+                        margin-top: 10px;
+                        margin-left: 0;
+                        width: 100%;
+                        max-width: 150px;
+                        font-size: 22px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            .text-right{
+                vertical-align: middle;
+                position: relative;
+                 @media only screen and (max-width: 610px) {
+                   text-align: left;
+                }
+                .title{
+                    color: #1595d3;
+                    font-family: $font-main;
+                    font-size: $font-small;
+                    line-height: 22px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 80%;
+                    @media only screen and (max-width: 516px) {
+                        width: 100%;
+                    }
+                    span{
+                        font-size: $font-big;
+                        padding-right: 35px;
+                            @media only screen and (max-width: 630px) {
+                            padding-right: 0;
+                        }
+                    }
+                }
+                .icon{
+                    vertical-align: middle;
+                    display: inline-block;
+                    margin-left: 10px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+            .sec-list-promotion{
+                padding: 10px;
+                background-color: #F7F7F7;
+                border: 1px solid #EDEDED;
+                .title-promotion{
+                    font-family: $font-main;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: $color-blue;
+                    margin-bottom: 5px;
+                    text-align: left;
+                    padding-top: 5px;
+                    span{
+                        position: relative;
+                        top: -6px;
+                        @media only screen and (max-width: 999px) {
+                            top: -2px;
+                        }
+                    }
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    height: 120px;
+                    li{
+                        vertical-align: top;
+                        list-style-type:disc;
+                        list-style-position: inside;
+                        color: #666666;
+                        font-family: $font-main;
+                        font-size: 20px;
+                        line-height: 20px;
+                        text-align: left;
+                        //max-width: 120px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            tr{
+                td{
+                    height: 160px;
+                }
+                td.fixed-column{
+                    width: 220px;
+                }
+                .sec-head{
+                    width: 200px;
+                }
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            tr{
+                td.fixed-column{
+                    width: 150px;
+                }
+                .sec-head{
+                    width: 180px;
+                }
+            }
+        }
+    }
+}
+// Lightbox เปรียบเทียบ 
+.section-detail-compare>.fixed-columns {
+    display: none;
+}
+
+// Lightbox เปรียบเทียบ 
+@media only screen and (max-width: 767px) {
+    .section-detail-compare>.fixed-columns {
+        position: absolute;
+        display: inline-block;
+        width: 220px;
+        left: 20px;
+        z-index: 99;
+        .text-right{
+            text-align: left;
+            .title{
+                width: 80%;
+                @media only screen and (max-width: 767px) {
+                    width: auto;
+                }
+            }
+        }
+        tr{
+            td{
+                height: 160px;
+            }
+            &:first-child{
+                td{
+                    height: 197px;
+                }
+            }
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .section-detail-compare>.fixed-columns {
+        position: absolute;
+        display: inline-block;
+        width: 150px;
+        left: 20px;
+        z-index: 99;
+        .text-right{
+            text-align: left;
+            .title{
+                width: 80%;
+                @media only screen and (max-width: 767px) {
+                    width: auto;
+                }
+            }
+        }
+        tr{
+            td{
+                height: 160px;
+            }
+        }
+    }
+}

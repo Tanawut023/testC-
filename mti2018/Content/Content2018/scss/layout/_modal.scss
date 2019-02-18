@@ -1,0 +1,226 @@
+.modal-backdrop{
+    z-index: 9990;
+}
+.modal{
+    z-index: 9999;
+}
+
+.TypeModalSmall{
+    .widthModal{
+        width: auto;
+        max-width: 400px;
+        margin: 20px auto 0;
+        z-index: 9999;
+        .modal-header{
+            padding: 0 15px 20px;
+            border-bottom: 0;
+            background-color: #15497A;
+            .btn-close{
+                cursor: pointer;
+                float: right;
+                margin: 10px 15px;
+                .icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                    i{
+                        color: #fff;
+                    }
+                }
+                .text{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: $font-main;
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #ffffff;
+                }
+            }
+            .name-product{
+                font-family: $font-main;
+                font-size: 32px;
+                line-height: 32px;
+                color: #ffffff;
+            }
+        }
+        .list-subproduct{
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: block;
+                    padding: 5px 0;
+                    &:before {
+                        font-family: FontAwesome;
+                        content: "\f105";
+                        color: #666666;
+                        font-size: 20px;
+                        line-height: 26px;
+                        padding-right: 5px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .text{
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #666666;
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 90%;
+                        text-align: left;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 400px) {
+            margin: 20px 20px 0;
+        }
+    }
+}
+
+.TypeModal{
+    .widthModal{
+        width: auto;
+        max-width: 900px;
+        margin: 20px auto 0;
+        z-index: 9999;
+        .modal-content{
+            border-radius: 0;
+        }
+        .modal-header{
+            padding: 0 15px 20px;
+            border-bottom: 0;
+            background-color: #15497A;
+            .btn-close{
+                cursor: pointer;
+                float: right;
+                margin: 10px 15px;
+                .icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                    i{
+                        color: #fff;
+                    }
+                }
+                .text{
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: $font-main;
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #ffffff;
+                }
+            }
+            .btn-close-compare{
+                .icon{
+                    display: inline-block;
+                    vertical-align: middle;
+                    i{
+                        font-size: 20px;
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+        .modal-header.no-bg{
+            background-color: transparent;
+            padding-bottom: 0;
+        }
+        .modal-body{
+            .images-product{
+                text-align: center;
+                img{
+                    width: auto;
+                }
+            }
+        }
+    }
+    .widthModal.-compare{
+        max-width: 600px;
+        .modal-body{
+            .section-detail-compare{
+                table{
+                    tr{
+                        td{
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.TypeModalLanding {
+    .widthModal {
+        width: auto;
+        max-width: 600px;
+        margin: 20px auto 0;
+        z-index: 9999;
+
+        .modal-content {
+            border-radius: 0;
+        }
+
+        .modal-header {
+            padding: 0 15px 20px;
+            border-bottom: 0;
+            background-color: #15497A;
+
+            .btn-close {
+                cursor: pointer;
+                float: right;
+                margin: 10px 15px;
+
+                .icon {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+
+                .text {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: $font-main;
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #ffffff;
+                }
+            }
+
+            .btn-close-compare {
+                .icon {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    i {
+                        font-size: 20px;
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+
+        .modal-header.no-bg {
+            background-color: transparent;
+            padding-bottom: 0;
+        }
+
+        .modal-body {
+            .images-product {
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,348 @@
+﻿// Error
+.error{
+    input[type=text], input[type=email], input[type=tel], input[type=password], textarea{
+	    border: 1px solid #ff4000;
+        &:focus{
+            border: 1px solid #ff4000;
+        }
+    }
+}
+.error{
+    select{
+        border: 1px solid #ff4000 !important;
+    }
+}
+.has-error .bootstrap-select .dropdown-toggle, .error .bootstrap-select .dropdown-toggle{
+    border-color: #ff4000 !important;
+}
+.txt-error{
+    display: none;
+    color: #ff4000;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: $font-main;
+    position: relative;
+    i{
+        font-size: 16px;
+    }
+}
+// Lightbox
+.txt-error-lb{
+    display: none;
+    color: #ff4000;
+    font-size: 18px;
+    font-family: $font-main;
+    position: relative;
+    width: 200px;
+    @media (max-width: 767px) {
+        position: relative;
+    }
+    i{
+        font-size: 16px;
+    }
+}
+.err-rdo-box{
+    bottom: -15px;
+    left: 10px;
+    @media (max-width: 999px) {
+        bottom: 0;
+        position: relative;
+        float: left;
+    }
+}
+.err-rdo-boxpage{
+    bottom: -15px;
+    left: 10px;
+    @media (max-width: 999px) {
+        bottom: 0;
+        left: 0;
+        position: relative;
+        float: left;
+    }
+}
+.err-condition{
+    bottom: -5px;
+    left: 40px;
+    @media (max-width: 999px) {
+        bottom: 0;
+        left: 40px;
+        position: relative;
+        float: left;
+    }
+}
+.err-liceplate{
+    width: 450px;
+     @media (max-width: 450px) {
+         width: 100%;
+     }
+}
+
+
+/*---------------------------------------------     Renew / Claim     -------------------------------------------------------------*/
+// Arrow Border Validate
+.arrow_box {
+	//position: relative;
+	background: #e9e9e9;
+	border: 1px solid #bebebe;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	//top: 50%;
+    top: 65px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    @media (max-width: 999px) {
+        top: auto;
+        bottom: 100%;
+	    left: 50%;
+        right: auto;
+    }
+}
+
+.arrow_box:after {
+	border-color: rgba(233, 233, 233, 0);
+	border-right-color: #e9e9e9;
+	border-width: 10px;
+	margin-top: -10px;
+     @media (max-width: 999px) {
+        border-right-color: #3f9ccf;
+        border-bottom-color: #e9e9e9;
+        margin-top: auto;
+        margin-left: -10px;
+    }
+}
+.arrow_box:before {
+	border-color: rgba(190, 190, 190, 0);
+	border-right-color: #bebebe;
+	border-width: 11px;
+	margin-top: -11px;
+     @media (max-width: 999px) {
+        border-right-color: #3f9ccf;
+        border-bottom-color: #e9e9e9;
+        margin-top: auto;
+        margin-left: -11px;
+    }
+}
+
+
+//Content Form Error
+    // เลขที่กรมธรรม์ของท่านไม่ถูกต้อง
+#noInsuranceInvalid{
+    display: block;
+}
+    //กรมธรรม์ของท่านสิ้นสุด
+#expInsurance{
+    display: none;
+}
+    //เลขที่บัตรประชาชนไม่ถูกต้อง
+#idIncorrect{
+    display: none;
+}
+
+.form-error{
+    position: absolute;
+    padding: 5px 10px 0;
+    background-color: #e9e9e9;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    width: 280px;
+    left: 230px;
+    top: -50px;
+    @media (min-width: 1000px) and (max-width: 1199px) {
+		width: 250px;
+	}
+    .detail-form-error{
+        font-family: $font-main;
+        .btn-close{
+            float: right;
+            text-align: right;
+            cursor: pointer;
+        }
+        .text-head-error{
+            font-size: $font-smallest;
+            color: #666666;
+            line-height: 18px;
+            span{
+                font-size: $font-small;
+                color: #f9981c;
+            }
+        }
+        .filed-form{
+            .filed-middle{
+                padding-top: 5px;
+            }
+            .row{
+                margin-bottom: 3px;
+                .form-group{
+                    margin-bottom: 2px;
+                    .form-control{
+                        background-color: inherit;
+                    }
+                    .btn{
+                        background-color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+            input[type=text], input[type=email] {
+                font-size: $font-smallest;
+            }
+            textarea{
+                font-size: $font-smallest;
+                padding: 5px 10px;
+            }
+            select{
+                font-size: $font-smallest;
+            }
+            .txt-title-filed{
+                font-size: $font-smallest;
+                color: #666666;
+                i{
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            .button-sent-error{
+                button{
+                    border: none;
+                    font-size: 18px;
+                    /*background-color: #e9e9e9;*/
+                    background-color: $color-btn-orange;
+                    -webkit-border-top-right-radius: 100px;
+	                -webkit-border-bottom-right-radius: 100px;
+	                -moz-border-radius-topright: 100px;
+	                -moz-border-radius-bottomright: 100px;
+	                border-top-right-radius: 100px;
+	                border-bottom-right-radius: 100px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    i{
+		                margin-left: 10px;
+		                font-size: 18px;
+		                position: relative;
+		                top: 2px;
+	                }
+                }
+                .btn-edit{
+                    margin: 5px 0 0;
+                    /*color: #666;*/
+                    color: #fff;
+                }
+            }
+            .text-footer-error{
+                .text-call{
+                    font-size: 20px;
+                    color: #666;
+                    img{
+                        position: relative;
+                        top: -2px;
+                    }
+                }
+                .text-ask-online{
+                    text-align: right;
+                    a{
+                        font-size: 18px;
+                        color: #1595d3;
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 999px) {
+        position: relative;
+        left: -73px;
+        top: 20px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 20px;
+    }
+    @media (max-width: 340px) {
+        position: relative;
+        left: auto;
+        right: 10px;
+        margin: auto;
+        top: 20px;
+    }
+}
+.form-error-contact{
+    left: 270px;
+    @media (max-width: 1199px) {
+        left: 235px;
+    }
+    @media (max-width: 999px) {
+        position: absolute;
+        top: -30px;
+        left: 360px;
+    }
+    @media (max-width: 767px) {
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 20px;
+    }
+}
+// Arrow Border Validate
+.arrow_box-contact {
+	//position: relative;
+	background: #e9e9e9;
+	border: 1px solid #bebebe;
+}
+.arrow_box-contact:after, .arrow_box-contact:before {
+	right: 100%;
+	//top: 50%;
+    top: 67px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    @media (max-width: 999px) {
+        top: 47px;
+    }
+    @media (max-width: 767px) {
+        top: auto;
+        bottom: 100%;
+	    left: 50%;
+        right: auto;
+    }
+}
+
+.arrow_box-contact:after {
+	border-color: rgba(233, 233, 233, 0);
+	border-right-color: #e9e9e9;
+	border-width: 10px;
+	margin-top: -10px;
+     @media (max-width: 767px) {
+        border-right-color: #fff;
+        border-bottom-color: #e9e9e9;
+        margin-top: auto;
+        margin-left: -10px;
+        border-width: 10px;
+    }
+}
+.arrow_box-contact:before {
+	border-color: rgba(190, 190, 190, 0);
+	border-right-color: #bebebe;
+	border-width: 12px;
+	margin-top: -12px;
+     @media (max-width: 767px) {
+        border-right-color: #fff;
+        border-bottom-color: #e9e9e9;
+        margin-top: auto;
+        margin-left: -11px;
+        border-width: 10px;
+    }
+}

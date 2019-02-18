@@ -1,0 +1,322 @@
+﻿// Button
+.btn{
+	font-family: $font-main;
+	font-size: 26px;
+    line-height: 26px;
+	padding: 8px 15px;
+	margin: 15px 0 0 15px;
+	color: #fff;
+    border: none;
+    border-radius: 0;
+	/*-webkit-border-top-right-radius: 100px;
+	-webkit-border-bottom-right-radius: 100px;
+	-moz-border-radius-topright: 100px;
+	-moz-border-radius-bottomright: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;*/
+    width: 200px;
+    @media only screen and (max-width: 480px) {
+        width: 45%;
+        padding: 8px 10px;
+        margin-left: 10px;
+    }
+    @media only screen and (max-width: 360px) {
+        width: 100%;
+        margin-left: 0;
+    }
+	i{
+		margin-left: 10px;
+		font-size: 18px;
+		position: relative;
+		top: 6px;
+        float: right;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&:focus{
+		color: #fff;
+	}
+}
+.btn-style{
+    display: inline-block;
+    @media (max-width: 767px) {
+		display: block;
+	}
+}
+
+.btn-reverse-mb{
+    @media (max-width: 360px) {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    
+}
+
+
+.btn-left-right{
+    .btn-back{
+        float: left;
+        margin-left: 0;
+    }
+    .btn-next{
+        float: right;
+    }
+}
+
+.btn-back{
+    span{
+        float: right;
+    }
+    .icon-btn-arrow.-left{
+        float: left;
+        img{
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+.btn-next{
+    span{
+        float: left;
+    }
+    .icon-btn-arrow.-right{
+        float: right;
+        img{
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+.btn-center{
+    span{
+        float: none;
+    }
+}
+
+.btn-2x{
+	font-family: $font-main;
+	font-size: $font-medium;
+    display: inline-block;
+	margin: 0;
+	line-height: 22px;
+	padding: 0 8px;
+	color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+	/*-webkit-border-top-right-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+	-moz-border-radius-bottomright: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;*/
+	i{
+		margin-left: 5px;
+		font-size: 15px;
+		position: relative;
+		top: 2px;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&:focus{
+		color: #fff;
+	}
+}
+
+.btn-blue{
+	background-color: $color-btn-blue;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    &:hover{
+        background-color: $color-btn-bluedeep;
+    }
+}
+.btn-bluedeep{
+	background-color: $color-btn-bluedeep;
+}
+.btn-gray{
+	background-color: $color-btn-gray;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    &:hover{
+        background-color: #333333;
+    }
+}
+.btn-orange{
+	//background-color: $color-btn-orange;
+    background-color: #fa981d;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    &:hover{
+        background-color: #da8315;
+    }
+}
+.btn-red{
+	background-color: $color-btn-red;
+}
+.btn-orangedeep{
+	background-color: $color-btn-orangedeep;
+}
+.btn-tranparent-white{
+	background-color: transparent;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    border: 1px solid #ffffff;
+    &:hover{
+        background-color: $color-btn-bluedeep;;
+    }
+}
+
+
+// Button Banner ซื้อออนไลน์
+.btn-angle{
+	font-family: $font-main;
+	font-size: $font-medium;
+	padding: 0 12px 0;
+	margin: 10px 0 0;
+	line-height: 30px;
+	color: #fff;
+	i{
+		margin-left: 10px;
+		font-size: 18px;
+		position: relative;
+		top: 2px;
+	}
+	@media (max-width: 767px) {
+		font-size: 22px;
+	}
+	@media (max-width: 479px) {
+		font-size: 20px;
+		i{
+			margin-left: 0;
+		}
+	}
+	
+}
+// Button แก้ไขข้อมูลในหน้า Report
+.btn-edit{
+    margin: 10px 0 30px;
+}
+
+// Lightbox
+.btn-lb{
+    width: 160px;
+    text-align: right;
+}
+
+// Service
+.btn-searchOther{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font-main;
+    margin-left: 15px;
+	font-size: 18px;
+	padding: 0 10px;
+	line-height: 20px;
+	color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+	/*-webkit-border-top-left-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius-topleft: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;*/
+	i{
+		margin-right: 5px;
+		font-size: 18px;
+		position: relative;
+		top: 2px;
+	}
+    a{
+        color: #fff;
+    }
+    @media (max-width: 375px) {
+        display: block;
+        width: 105px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+// Product + service(บริการช่วยเหลือรถเสียฉุกเฉิน 24 ช.ม.)
+.list-file-download{
+    margin: 20px 0;
+    font-family: $font-main;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            padding: 10px;
+            border: 1px solid #bebebe;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .left{
+                float: left;
+                @media (max-width: 767px) {
+                    float: none;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+            .right{
+                float: right;
+                @media (max-width: 767px) {
+                    float: none;
+                    display: block;
+                }
+            }
+            .name-file{
+                font-size: $font-big;
+                color: #1595d3;
+            }
+            .desc-file{
+                font-size: $font-small;
+                color: #666666;
+            }
+            .btn-dw{
+                cursor: pointer;
+                background-color: #1595d3;
+                font-size: $font-small;
+                color: #fff;
+                padding: 0 10px;
+                width: 100px;
+                border-radius: 0;
+                /*-webkit-border-top-right-radius: 100px;
+	            -webkit-border-bottom-right-radius: 100px;
+	            -moz-border-radius-topright: 100px;
+	            -moz-border-radius-bottomright: 100px;
+	            border-top-right-radius: 100px;
+	            border-bottom-right-radius: 100px;*/
+                i{
+                    font-size: 16px;
+                }
+            }
+            a{
+                color: #fff;
+            }
+            .type-size-file{
+                font-size: $font-smallest;
+                color: #666666;
+            }
+        }
+    }
+}

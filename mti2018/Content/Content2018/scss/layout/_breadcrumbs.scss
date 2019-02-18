@@ -1,0 +1,125 @@
+﻿// Breadcrumbs Step
+.navigation-step{
+    text-align: center;
+    margin: 10px 0 30px;
+	.list-step{
+		margin: 0;
+        padding: 0;
+        
+        li{
+            list-style: none;
+            display: inline-block;
+            vertical-align: middle;
+            width: 170px;
+            .step{
+                .txt-step{
+                    font-family: $font-main;
+                    font-size: 21px;
+                    line-height: 21px;
+                    color: $color-gray;
+                    margin-bottom: 5px;
+                    span{
+                        font-size: 27px;
+                        line-height: 21px;
+                    }
+                }
+                .part-step{
+                    .part-list-step{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            float: left;
+                            background-color: #CCCCCC;
+                            width: 32%;
+                            height: 8px;
+                            margin-right: 2px;
+                        }
+                        li.active{
+                            background-color: $color-blue;;
+                        }
+                    }
+                }
+            }
+            
+        }
+        li.active{
+            .step{
+                .txt-step{
+                    color: $color-blue;
+                }
+            }
+        }
+        li.icon-next-step{
+            width: auto;
+            margin: 0 15px;
+            .icon{
+                background-image:url('../../../Images/icon/p_dropdown_black-right.png');
+                width: 11px;
+                height: 26px;
+                background-repeat: no-repeat;
+            }
+        }
+        li.icon-next-step.active{
+            .icon{
+                background-image:url('../../../Images/icon/p_dropdown_black-select-right.png');
+            }
+        }
+	}
+
+
+    @media (max-width: 767px) {
+        .list-step{
+            li{
+                width: 100px;
+                .step{
+                    .txt-step{
+                        font-size: 28px;
+                        line-height: 18px;
+                        margin-bottom: 0;
+                        text-align: left;
+                        span{
+                            display: block;
+                            font-size: 21px;
+                            line-height: 21px;
+                        }
+                    }
+                    .part-step{
+                        .part-list-step{
+                            li{
+                                width: 31%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .list-step{
+            li{
+                width: 32%;
+                .step{
+                    .txt-step{
+                        font-size: 25px;
+                        line-height: 18px;
+                        span{
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+                    }
+                    .part-step{
+                        .part-list-step{
+                            li{
+                                width: 29%;
+                            }
+                        }
+                    }
+                }
+            }
+            li.icon-next-step{
+                display: none;
+            }
+        }
+    }
+}

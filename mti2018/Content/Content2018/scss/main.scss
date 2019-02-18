@@ -1,0 +1,44 @@
+// Import File Fol. scss
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "bootstrap";
+@import "slick";
+@import "slick-theme";
+
+// Import File Fol. scss/layout
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/openhighlight";
+@import "layout/alerterror";
+@import "layout/collapse";
+@import "layout/banner";
+@import "layout/breadcrumbs";
+@import "layout/styleinput";
+@import "layout/button";
+@import "layout/global";
+@import "layout/forms";
+@import "layout/footer";
+@import "layout/modal";
+
+// Import File Fol. scss/content
+@import "content/home";
+@import "content/intromenu";
+@import "content/compare";
+@import "content/report";
+@import "content/payment";
+@import "content/transaction";
+@import "content/product";
+
+@import "content/landingpage";
+@import "content/notfound";
+
+body{
+    position: relative;
+    right: 0;
+    transition: right 0.5s ease;
+	-webkit-transition: right 0.5s ease;
+	-moz-transition: right 0.5s ease;
+	-o-transition: right 0.5s ease;
+    background-color: #F7F7F7;
+}

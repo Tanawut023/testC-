@@ -1,0 +1,1205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BABEA94-4D9E-4DE8-9633-A47CA9DFDFFF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mti2018</RootNamespace>
+    <AssemblyName>mti2018</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\CallcenterController.cs" />
+    <Compile Include="Controllers\EcommerceController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LandingpageController.cs" />
+    <Compile Include="Controllers\NotfoundController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SitemapController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Content2018\bootstrap-select.css" />
+    <Content Include="Content\Content2018\bootstrap.css" />
+    <Content Include="Content\Content2018\bootstrap.min.css" />
+    <Content Include="Content\Content2018\font-awesome.min.css" />
+    <Content Include="Content\Content2018\font-iconmoon.css" />
+    <Content Include="Content\Content2018\jPages.css" />
+    <Content Include="Content\Content2018\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Content\Content2018\jquery-ui.css" />
+    <Content Include="Content\Content2018\jquery.datetimepicker.min.css" />
+    <Content Include="Content\Content2018\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\Content2018\jquery.fancybox.css" />
+    <Content Include="Content\Content2018\jquery.navgoco.css" />
+    <Content Include="Content\Content2018\magnific-popup.css" />
+    <Content Include="Content\Content2018\main.css" />
+    <Content Include="Content\Content2018\owl.carousel.min.css" />
+    <Content Include="Content\Content2018\owl.theme.default.min.css" />
+    <Content Include="Content\Content2018\print.css" />
+    <Content Include="Content\Content2018\Site.css" />
+    <Content Include="Content\Content2018\tooltipster.bundle.css" />
+    <Content Include="Content\Content2018\tooltipster.core.css" />
+    <Content Include="Content\Content2018\_fonts.css" />
+    <Content Include="Content\Content2018\_variables.css" />
+    <Content Include="Content\formEmail.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\icomoon.svg" />
+    <Content Include="fonts\psl152pro-demo.html" />
+    <Content Include="fonts\psl154pro-demo.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\banner-bg-bottom.png" />
+    <Content Include="Images\banner-poll.png" />
+    <Content Include="Images\banner\404notfound.png" />
+    <Content Include="Images\banner\banner-ecommerce.png" />
+    <Content Include="Images\banner\banner-home.jpg" />
+    <Content Include="Images\banner\banner-home.png" />
+    <Content Include="Images\banner\banner-home2.jpg" />
+    <Content Include="Images\banner\banner-home2.png" />
+    <Content Include="Images\banner\banner-home3.jpg" />
+    <Content Include="Images\banner\banner-landing.jpg" />
+    <Content Include="Images\banner\banner-landing_bk1.jpg" />
+    <Content Include="Images\banner\banner-landing_bk2.jpg" />
+    <Content Include="Images\banner\banner-product.jpg" />
+    <Content Include="Images\banner\banner-product.png" />
+    <Content Include="Images\bg-menu-height.png" />
+    <Content Include="Images\bg-menuOn_MB.png" />
+    <Content Include="Images\fancybox_loading%402x.gif" />
+    <Content Include="Images\fancybox_loading.gif" />
+    <Content Include="Images\fancybox_overlay.png" />
+    <Content Include="Images\home\image-banner-widget1.png" />
+    <Content Include="Images\home\image-banner-widget2.png" />
+    <Content Include="Images\home\image-banner-widget3.png" />
+    <Content Include="Images\home\image-tab-demo1.png" />
+    <Content Include="Images\home\image-tab-demo2.png" />
+    <Content Include="Images\home\image-tab-demo3.png" />
+    <Content Include="Images\home\image-tab-demo4.png" />
+    <Content Include="Images\icon\bg-menu.png" />
+    <Content Include="Images\icon\bg-price-insurance.png" />
+    <Content Include="Images\icon\bg-price-insurance2x.png" />
+    <Content Include="Images\icon\claim\icon-detailowner.png" />
+    <Content Include="Images\icon\claim\icon-member.png" />
+    <Content Include="Images\icon\claim\icon-notification.png" />
+    <Content Include="Images\icon\claim\icon-owner.png" />
+    <Content Include="Images\icon\claim\icon-recivemoney.png" />
+    <Content Include="Images\icon\claim\icon-totalmoney.png" />
+    <Content Include="Images\icon\contact\fire\icon-product1.png" />
+    <Content Include="Images\icon\contact\fire\icon-product2.png" />
+    <Content Include="Images\icon\contact\fire\icon-product3.png" />
+    <Content Include="Images\icon\contact\fire\icon-product4.png" />
+    <Content Include="Images\icon\contact\fire\icon-product5.png" />
+    <Content Include="Images\icon\contact\health\icon-cancer.png" />
+    <Content Include="Images\icon\contact\health\icon-health.png" />
+    <Content Include="Images\icon\contact\icon-bankbbl.png" />
+    <Content Include="Images\icon\contact\icon-bankcimb.png" />
+    <Content Include="Images\icon\contact\icon-bankkbank.png" />
+    <Content Include="Images\icon\contact\icon-bankkrugsri.png" />
+    <Content Include="Images\icon\contact\icon-bankktc.png" />
+    <Content Include="Images\icon\contact\icon-bankscb.png" />
+    <Content Include="Images\icon\contact\icon-bankthana.png" />
+    <Content Include="Images\icon\contact\icon-banktmb.png" />
+    <Content Include="Images\icon\contact\icon-bullet.png" />
+    <Content Include="Images\icon\contact\icon-calendar.png" />
+    <Content Include="Images\icon\contact\icon-car.png" />
+    <Content Include="Images\icon\contact\icon-checkedsquare.png" />
+    <Content Include="Images\icon\contact\icon-checksquare.png" />
+    <Content Include="Images\icon\contact\icon-counterservice.png" />
+    <Content Include="Images\icon\contact\icon-fax.png" />
+    <Content Include="Images\icon\contact\icon-map.png" />
+    <Content Include="Images\icon\contact\icon-menu-highlight1.png" />
+    <Content Include="Images\icon\contact\icon-menu-highlight2.png" />
+    <Content Include="Images\icon\contact\icon-menu-highlight3.png" />
+    <Content Include="Images\icon\contact\icon-menu-highlight4.png" />
+    <Content Include="Images\icon\contact\icon-menu-highlight5.png" />
+    <Content Include="Images\icon\contact\icon-mpay.png" />
+    <Content Include="Images\icon\contact\icon-phone.png" />
+    <Content Include="Images\icon\contact\icon-post.png" />
+    <Content Include="Images\icon\contact\icon-search.png" />
+    <Content Include="Images\icon\contact\icon-social-facebook.png" />
+    <Content Include="Images\icon\contact\icon-social-line.png" />
+    <Content Include="Images\icon\contact\icon-social-mail.png" />
+    <Content Include="Images\icon\contact\icon-social-map.png" />
+    <Content Include="Images\icon\contact\icon-social-youtube.png" />
+    <Content Include="Images\icon\contact\icon-statusinsure.png" />
+    <Content Include="Images\icon\contact\icon-totalrenew.png" />
+    <Content Include="Images\icon\contact\icon-true.png" />
+    <Content Include="Images\icon\contact\icon-true2.png" />
+    <Content Include="Images\icon\contact\motor\icon-2plus.png" />
+    <Content Include="Images\icon\contact\motor\icon-2plussave.png" />
+    <Content Include="Images\icon\contact\motor\icon-3plussave.png" />
+    <Content Include="Images\icon\contact\motor\icon-3save.png" />
+    <Content Include="Images\icon\contact\motor\icon-8.png" />
+    <Content Include="Images\icon\contact\motor\icon-prb.png" />
+    <Content Include="Images\icon\contact\motor\icon-type1.png" />
+    <Content Include="Images\icon\contact\other\icon-product1.png" />
+    <Content Include="Images\icon\contact\other\icon-product2.png" />
+    <Content Include="Images\icon\contact\other\icon-product3.png" />
+    <Content Include="Images\icon\contact\other\icon-product4.png" />
+    <Content Include="Images\icon\contact\other\icon-product5.png" />
+    <Content Include="Images\icon\contact\payment\icon-paymentonline.png" />
+    <Content Include="Images\icon\contact\payment\icon-paymenttransfer.png" />
+    <Content Include="Images\icon\contact\pa\icon-family.png" />
+    <Content Include="Images\icon\contact\pa\icon-happy.png" />
+    <Content Include="Images\icon\contact\pa\icon-kids.png" />
+    <Content Include="Images\icon\contact\ta\icon-abroad.png" />
+    <Content Include="Images\icon\contact\ta\icon-foreigner.png" />
+    <Content Include="Images\icon\contact\ta\icon-incoutry.png" />
+    <Content Include="Images\icon\customer\icon-account-date.png" />
+    <Content Include="Images\icon\customer\icon-account-date2.png" />
+    <Content Include="Images\icon\customer\icon-account-edit.png" />
+    <Content Include="Images\icon\customer\icon-account.png" />
+    <Content Include="Images\icon\customer\icon-checkedsquare.png" />
+    <Content Include="Images\icon\customer\icon-checksquare.png" />
+    <Content Include="Images\icon\customer\icon-contactmore.png" />
+    <Content Include="Images\icon\customer\icon-detaildataowner.png" />
+    <Content Include="Images\icon\customer\icon-detaildataownerbenefic.png" />
+    <Content Include="Images\icon\customer\icon-docinsrance.png" />
+    <Content Include="Images\icon\customer\icon-member.png" />
+    <Content Include="Images\icon\customer\icon-member2.png" />
+    <Content Include="Images\icon\customer\icon-nopaysuccess.png" />
+    <Content Include="Images\icon\customer\icon-paySuccess.png" />
+    <Content Include="Images\icon\customer\icon-payyet.png" />
+    <Content Include="Images\icon\customer\icon-print.png" />
+    <Content Include="Images\icon\customer\icon-recovery-email.png" />
+    <Content Include="Images\icon\customer\icon-recovery-sms.png" />
+    <Content Include="Images\icon\customer\icon-statusfinish.png" />
+    <Content Include="Images\icon\customer\icon-statusnotsuccess.png" />
+    <Content Include="Images\icon\customer\icon-statuspadding.png" />
+    <Content Include="Images\icon\customer\icon-statussuccess.png" />
+    <Content Include="Images\icon\customer\icon-subscribe.png" />
+    <Content Include="Images\icon\customer\icon-typefire.png" />
+    <Content Include="Images\icon\customer\icon-typemotor.png" />
+    <Content Include="Images\icon\customer\icon-typepa.png" />
+    <Content Include="Images\icon\customer\icon-typeta.png" />
+    <Content Include="Images\icon\customer\icon-typethealth.png" />
+    <Content Include="Images\icon\customer\icon-warning.png" />
+    <Content Include="Images\icon\customer\img-demo-activity.png" />
+    <Content Include="Images\icon\customer\img-demo-activity2.png" />
+    <Content Include="Images\icon\customer\img-detail1.png" />
+    <Content Include="Images\icon\customer\img-detail2.png" />
+    <Content Include="Images\icon\customer\img-detail3.png" />
+    <Content Include="Images\icon\customer\img-detail4.png" />
+    <Content Include="Images\icon\customer\img-detail5.png" />
+    <Content Include="Images\icon\customer\img-detail6.png" />
+    <Content Include="Images\icon\customer\img-detail7.png" />
+    <Content Include="Images\icon\customer\img-thumnail.png" />
+    <Content Include="Images\icon\customer\img-thumnail2.png" />
+    <Content Include="Images\icon\customer\img-thumnail3.png" />
+    <Content Include="Images\icon\favicon.ico" />
+    <Content Include="Images\icon\icon-advancesearch.png" />
+    <Content Include="Images\icon\icon-aec.png" />
+    <Content Include="Images\icon\icon-alert-claim.png" />
+    <Content Include="Images\icon\icon-alert-date.png" />
+    <Content Include="Images\icon\icon-alert-warning.png" />
+    <Content Include="Images\icon\icon-allBuilding.png" />
+    <Content Include="Images\icon\icon-allBuilding2x.png" />
+    <Content Include="Images\icon\icon-appstore.png" />
+    <Content Include="Images\icon\icon-asia.png" />
+    <Content Include="Images\icon\icon-beneficiary1.png" />
+    <Content Include="Images\icon\icon-beneficiary2.png" />
+    <Content Include="Images\icon\icon-billcheck.png" />
+    <Content Include="Images\icon\icon-billtransfer.png" />
+    <Content Include="Images\icon\icon-border-top-alert-date.png" />
+    <Content Include="Images\icon\icon-btn-downloaddmg.png" />
+    <Content Include="Images\icon\icon-btn-repaircar.png" />
+    <Content Include="Images\icon\icon-calenda-blue.png" />
+    <Content Include="Images\icon\icon-calenda-blue2.png" />
+    <Content Include="Images\icon\icon-calenda.png" />
+    <Content Include="Images\icon\icon-calenda2.png" />
+    <Content Include="Images\icon\icon-call-center-claim.png" />
+    <Content Include="Images\icon\icon-call-center-error.png" />
+    <Content Include="Images\icon\icon-call-center-lb.png" />
+    <Content Include="Images\icon\icon-call-center.png" />
+    <Content Include="Images\icon\icon-callcenter-footer-blue.png" />
+    <Content Include="Images\icon\icon-callcenter-footer.png" />
+    <Content Include="Images\icon\icon-callonline-footer.png" />
+    <Content Include="Images\icon\icon-camera.png" />
+    <Content Include="Images\icon\icon-card.png" />
+    <Content Include="Images\icon\icon-card2.png" />
+    <Content Include="Images\icon\icon-cart.png" />
+    <Content Include="Images\icon\icon-check-bgwhite.png" />
+    <Content Include="Images\icon\icon-check-compare.png" />
+    <Content Include="Images\icon\icon-check-default-lb.png" />
+    <Content Include="Images\icon\icon-check-default.png" />
+    <Content Include="Images\icon\icon-check-rate.png" />
+    <Content Include="Images\icon\icon-check.png" />
+    <Content Include="Images\icon\icon-checkbox-check.png" />
+    <Content Include="Images\icon\icon-checkbox-checked.png" />
+    <Content Include="Images\icon\icon-checked-compare.png" />
+    <Content Include="Images\icon\icon-checked.png" />
+    <Content Include="Images\icon\icon-checkTabRenew.png" />
+    <Content Include="Images\icon\icon-chevrolet.png" />
+    <Content Include="Images\icon\icon-claim-post.png" />
+    <Content Include="Images\icon\icon-claim-surveystatus.png" />
+    <Content Include="Images\icon\icon-claim.png" />
+    <Content Include="Images\icon\icon-claimonline.png" />
+    <Content Include="Images\icon\icon-cliam-nonmotor.png" />
+    <Content Include="Images\icon\icon-close-canvas.png" />
+    <Content Include="Images\icon\icon-close.png" />
+    <Content Include="Images\icon\icon-compare-check.png" />
+    <Content Include="Images\icon\icon-compare-checked.png" />
+    <Content Include="Images\icon\icon-compare-no.png" />
+    <Content Include="Images\icon\icon-compare-noprotect.png" />
+    <Content Include="Images\icon\icon-compare-protect.png" />
+    <Content Include="Images\icon\icon-compare-yes.png" />
+    <Content Include="Images\icon\icon-complete.png" />
+    <Content Include="Images\icon\icon-contact-callcenter.png" />
+    <Content Include="Images\icon\icon-contact-online-big.png" />
+    <Content Include="Images\icon\icon-contact-online.png" />
+    <Content Include="Images\icon\icon-customerservice.png" />
+    <Content Include="Images\icon\icon-day.png" />
+    <Content Include="Images\icon\icon-delete.png" />
+    <Content Include="Images\icon\icon-demopdf.png" />
+    <Content Include="Images\icon\icon-docEn.png" />
+    <Content Include="Images\icon\icon-docThai.png" />
+    <Content Include="Images\icon\icon-document-request.png" />
+    <Content Include="Images\icon\icon-document-request2x.png" />
+    <Content Include="Images\icon\icon-down-payment-content.png" />
+    <Content Include="Images\icon\icon-download.png" />
+    <Content Include="Images\icon\icon-downloadbrochures.png" />
+    <Content Include="Images\icon\icon-downloadform.png" />
+    <Content Include="Images\icon\icon-downloadmanual.png" />
+    <Content Include="Images\icon\icon-ecommerce-mb.png" />
+    <Content Include="Images\icon\icon-epolicy.png" />
+    <Content Include="Images\icon\icon-expprotection.png" />
+    <Content Include="Images\icon\icon-expprotection2.png" />
+    <Content Include="Images\icon\icon-expprotection3.png" />
+    <Content Include="Images\icon\icon-fail.png" />
+    <Content Include="Images\icon\icon-finger1.png" />
+    <Content Include="Images\icon\icon-finger2.png" />
+    <Content Include="Images\icon\icon-finger3.png" />
+    <Content Include="Images\icon\icon-finger4.png" />
+    <Content Include="Images\icon\icon-finger5.png" />
+    <Content Include="Images\icon\icon-finger6.png" />
+    <Content Include="Images\icon\icon-fire.png" />
+    <Content Include="Images\icon\icon-fire2.png" />
+    <Content Include="Images\icon\icon-footercancer.png" />
+    <Content Include="Images\icon\icon-footerfire.png" />
+    <Content Include="Images\icon\icon-footerform1.png" />
+    <Content Include="Images\icon\icon-footerform2.png" />
+    <Content Include="Images\icon\icon-footerform3.png" />
+    <Content Include="Images\icon\icon-footerpa.png" />
+    <Content Include="Images\icon\icon-footerta.png" />
+    <Content Include="Images\icon\icon-gift-compare.png" />
+    <Content Include="Images\icon\icon-googleplay.png" />
+    <Content Include="Images\icon\icon-have.png" />
+    <Content Include="Images\icon\icon-health.png" />
+    <Content Include="Images\icon\icon-height.png" />
+    <Content Include="Images\icon\icon-help.png" />
+    <Content Include="Images\icon\icon-help2.png" />
+    <Content Include="Images\icon\icon-help2_2.png" />
+    <Content Include="Images\icon\icon-house.png" />
+    <Content Include="Images\icon\icon-howtoplay.png" />
+    <Content Include="Images\icon\icon-instagram.png" />
+    <Content Include="Images\icon\icon-inTravel.png" />
+    <Content Include="Images\icon\icon-liststyle-point-defalut.png" />
+    <Content Include="Images\icon\icon-liststyle-point.png" />
+    <Content Include="Images\icon\icon-logo-bangkok.png" />
+    <Content Include="Images\icon\icon-logo-counterservice.png" />
+    <Content Include="Images\icon\icon-logo-credit.png" />
+    <Content Include="Images\icon\icon-logo-debit.png" />
+    <Content Include="Images\icon\icon-logo-kbank.png" />
+    <Content Include="Images\icon\icon-logo-ktc.png" />
+    <Content Include="Images\icon\icon-logo-linepay.png" />
+    <Content Include="Images\icon\icon-logo-netbank.png" />
+    <Content Include="Images\icon\icon-logo-otherbank-installment.png" />
+    <Content Include="Images\icon\icon-logo-otherbank.png" />
+    <Content Include="Images\icon\icon-logomail.png" />
+    <Content Include="Images\icon\icon-long-arrow-right.png" />
+    <Content Include="Images\icon\icon-mail-lb.png" />
+    <Content Include="Images\icon\icon-menu-hamberger.png" />
+    <Content Include="Images\icon\icon-menuhighlight-search.png" />
+    <Content Include="Images\icon\icon-menuhighlight.png" />
+    <Content Include="Images\icon\icon-menuProduct01.png" />
+    <Content Include="Images\icon\icon-menuProduct01_2.png" />
+    <Content Include="Images\icon\icon-menuProduct02.png" />
+    <Content Include="Images\icon\icon-menuProduct02_2.png" />
+    <Content Include="Images\icon\icon-menuProduct03.png" />
+    <Content Include="Images\icon\icon-menuProduct03_2.png" />
+    <Content Include="Images\icon\icon-menuProduct04.png" />
+    <Content Include="Images\icon\icon-menuProduct04_2.png" />
+    <Content Include="Images\icon\icon-menuProduct05.png" />
+    <Content Include="Images\icon\icon-menuProduct05_2.png" />
+    <Content Include="Images\icon\icon-menuProduct06.png" />
+    <Content Include="Images\icon\icon-menuProduct06_2.png" />
+    <Content Include="Images\icon\icon-nationOther.png" />
+    <Content Include="Images\icon\icon-nationTH.png" />
+    <Content Include="Images\icon\icon-next-product.png" />
+    <Content Include="Images\icon\icon-next.png" />
+    <Content Include="Images\icon\icon-no-select.png" />
+    <Content Include="Images\icon\icon-no.png" />
+    <Content Include="Images\icon\icon-nohave.png" />
+    <Content Include="Images\icon\icon-oil.png" />
+    <Content Include="Images\icon\icon-oil2.png" />
+    <Content Include="Images\icon\icon-onlyBuilding.png" />
+    <Content Include="Images\icon\icon-onlyBuilding2x.png" />
+    <Content Include="Images\icon\icon-other1.png" />
+    <Content Include="Images\icon\icon-outTravel.png" />
+    <Content Include="Images\icon\icon-pa.png" />
+    <Content Include="Images\icon\icon-panit.png" />
+    <Content Include="Images\icon\icon-payfull.png" />
+    <Content Include="Images\icon\icon-payinstallment.png" />
+    <Content Include="Images\icon\icon-payonline.png" />
+    <Content Include="Images\icon\icon-people-blue.png" />
+    <Content Include="Images\icon\icon-people-blue2.png" />
+    <Content Include="Images\icon\icon-pet.png" />
+    <Content Include="Images\icon\icon-pickup-big.png" />
+    <Content Include="Images\icon\icon-pickup-select.png" />
+    <Content Include="Images\icon\icon-pickup.png" />
+    <Content Include="Images\icon\icon-pop-over.png" />
+    <Content Include="Images\icon\icon-postoffice.png" />
+    <Content Include="Images\icon\icon-prev.png" />
+    <Content Include="Images\icon\icon-preview.png" />
+    <Content Include="Images\icon\icon-preview2.png" />
+    <Content Include="Images\icon\icon-product4.png" />
+    <Content Include="Images\icon\icon-product6.png" />
+    <Content Include="Images\icon\icon-promotion.png" />
+    <Content Include="Images\icon\icon-re-centre-select.png" />
+    <Content Include="Images\icon\icon-re-centre-select2.png" />
+    <Content Include="Images\icon\icon-re-centre.png" />
+    <Content Include="Images\icon\icon-re-garage-select.png" />
+    <Content Include="Images\icon\icon-re-garage.png" />
+    <Content Include="Images\icon\icon-renewonline.png" />
+    <Content Include="Images\icon\icon-rent.png" />
+    <Content Include="Images\icon\icon-report-addresscrop.png" />
+    <Content Include="Images\icon\icon-report-bike.png" />
+    <Content Include="Images\icon\icon-report-billcrop.png" />
+    <Content Include="Images\icon\icon-report-claim_motor.png" />
+    <Content Include="Images\icon\icon-report-date.png" />
+    <Content Include="Images\icon\icon-report-detailcar.png" />
+    <Content Include="Images\icon\icon-report-document-request.png" />
+    <Content Include="Images\icon\icon-report-email.png" />
+    <Content Include="Images\icon\icon-report-idcard.png" />
+    <Content Include="Images\icon\icon-report-insu.png" />
+    <Content Include="Images\icon\icon-report-money.png" />
+    <Content Include="Images\icon\icon-report-owner.png" />
+    <Content Include="Images\icon\icon-report-pet.png" />
+    <Content Include="Images\icon\icon-report-phone.png" />
+    <Content Include="Images\icon\icon-sedan-big.png" />
+    <Content Include="Images\icon\icon-sedan-report-claim.png" />
+    <Content Include="Images\icon\icon-sedan-select.png" />
+    <Content Include="Images\icon\icon-sedan.png" />
+    <Content Include="Images\icon\icon-see-detail.png" />
+    <Content Include="Images\icon\icon-select-payment.png" />
+    <Content Include="Images\icon\icon-select-poll.png" />
+    <Content Include="Images\icon\icon-select.png" />
+    <Content Include="Images\icon\icon-sent-callcenter-claim.png" />
+    <Content Include="Images\icon\icon-sent-callcenter.png" />
+    <Content Include="Images\icon\icon-sent-claimdi.png" />
+    <Content Include="Images\icon\icon-shared-facebook.png" />
+    <Content Include="Images\icon\icon-shared-mail.png" />
+    <Content Include="Images\icon\icon-slide-widget-next.png" />
+    <Content Include="Images\icon\icon-slide-widget-prev.png" />
+    <Content Include="Images\icon\icon-slidenext-payment.png" />
+    <Content Include="Images\icon\icon-slideprev-payment.png" />
+    <Content Include="Images\icon\icon-social-fb.png" />
+    <Content Include="Images\icon\icon-social-youtube.png" />
+    <Content Include="Images\icon\icon-status-last.png" />
+    <Content Include="Images\icon\icon-status-last2.png" />
+    <Content Include="Images\icon\icon-stepclaimmap.png" />
+    <Content Include="Images\icon\icon-stylebuilding.png" />
+    <Content Include="Images\icon\icon-stylebuilding2.png" />
+    <Content Include="Images\icon\icon-stylebuilding3.png" />
+    <Content Include="Images\icon\icon-submenu-ecom-2x.png" />
+    <Content Include="Images\icon\icon-submenu-ecom.png" />
+    <Content Include="Images\icon\icon-submenu-renew.png" />
+    <Content Include="Images\icon\icon-submenu-service-1.png" />
+    <Content Include="Images\icon\icon-submenu-service-2.png" />
+    <Content Include="Images\icon\icon-submenu-service-3.png" />
+    <Content Include="Images\icon\icon-submenu-service-4.png" />
+    <Content Include="Images\icon\icon-submenu-service-5.png" />
+    <Content Include="Images\icon\icon-submenu-service-6.png" />
+    <Content Include="Images\icon\icon-ta-info.png" />
+    <Content Include="Images\icon\icon-tab-people.png" />
+    <Content Include="Images\icon\icon-tab-people1.png" />
+    <Content Include="Images\icon\icon-tab-people2.png" />
+    <Content Include="Images\icon\icon-tab-people3.png" />
+    <Content Include="Images\icon\icon-tab-people4.png" />
+    <Content Include="Images\icon\icon-tab-people5.png" />
+    <Content Include="Images\icon\icon-tab-peopleall.png" />
+    <Content Include="Images\icon\icon-time.png" />
+    <Content Include="Images\icon\icon-twitter.png" />
+    <Content Include="Images\icon\icon-uploadimage.png" />
+    <Content Include="Images\icon\icon-uploadimage2.png" />
+    <Content Include="Images\icon\icon-van-big.png" />
+    <Content Include="Images\icon\icon-van-select.png" />
+    <Content Include="Images\icon\icon-van.png" />
+    <Content Include="Images\icon\icon-warning.png" />
+    <Content Include="Images\icon\icon-weight.png" />
+    <Content Include="Images\icon\icon-ww_scg.png" />
+    <Content Include="Images\icon\icon-year.png" />
+    <Content Include="Images\icon\icon-yes-select.png" />
+    <Content Include="Images\icon\icon-yes.png" />
+    <Content Include="Images\icon\icon-zoom.png" />
+    <Content Include="Images\icon\icont-callcenteronline-claim.png" />
+    <Content Include="Images\icon\logo-kbank.png" />
+    <Content Include="Images\icon\logo_web.png" />
+    <Content Include="Images\icon\logo_web_footer.png" />
+    <Content Include="Images\icon\logo_web_onMB.png" />
+    <Content Include="Images\icon\mail\btn-againpay-mail.png" />
+    <Content Include="Images\icon\mail\btn-bill-mail.png" />
+    <Content Include="Images\icon\mail\btn-clicken-mail.png" />
+    <Content Include="Images\icon\mail\btn-clickth-mail.png" />
+    <Content Include="Images\icon\mail\btn-detail-mail.png" />
+    <Content Include="Images\icon\mail\logo_mti_mail.jpg" />
+    <Content Include="Images\icon\mastercard.png" />
+    <Content Include="Images\icon\payment\full.png" />
+    <Content Include="Images\icon\payment\full_2.png" />
+    <Content Include="Images\icon\payment\Installment.png" />
+    <Content Include="Images\icon\payment\Installment_2.png" />
+    <Content Include="Images\icon\payment\logo_visa.png" />
+    <Content Include="Images\icon\product\icon-accident.png" />
+    <Content Include="Images\icon\product\icon-business.png" />
+    <Content Include="Images\icon\product\icon-car.png" />
+    <Content Include="Images\icon\product\icon-fire.png" />
+    <Content Include="Images\icon\product\icon-health.png" />
+    <Content Include="Images\icon\product\icon-other.png" />
+    <Content Include="Images\icon\product\icon-ta.png" />
+    <Content Include="Images\icon\p_btn_back.png" />
+    <Content Include="Images\icon\p_btn_down.png" />
+    <Content Include="Images\icon\p_btn_next.png" />
+    <Content Include="Images\icon\p_dropdown_black-right.png" />
+    <Content Include="Images\icon\p_dropdown_black-select-right.png" />
+    <Content Include="Images\icon\p_dropdown_black-select.png" />
+    <Content Include="Images\icon\p_dropdown_black.png" />
+    <Content Include="Images\icon\renew\icon-addressinsurance.png" />
+    <Content Include="Images\icon\renew\icon-calendar.png" />
+    <Content Include="Images\icon\renew\icon-car.png" />
+    <Content Include="Images\icon\renew\icon-circle1.png" />
+    <Content Include="Images\icon\renew\icon-circle2.png" />
+    <Content Include="Images\icon\renew\icon-drive.png" />
+    <Content Include="Images\icon\renew\icon-mail.png" />
+    <Content Include="Images\icon\renew\icon-owner.png" />
+    <Content Include="Images\icon\renew\icon-peopleblue.png" />
+    <Content Include="Images\icon\renew\icon-phone.png" />
+    <Content Include="Images\icon\renew\icon-renew-report.png" />
+    <Content Include="Images\icon\renew\icon-setting.png" />
+    <Content Include="Images\icon\service\demo-ima_map.png" />
+    <Content Include="Images\icon\service\icon-callcenter-lb.png" />
+    <Content Include="Images\icon\service\icon-categories1.png" />
+    <Content Include="Images\icon\service\icon-categories1_MB.png" />
+    <Content Include="Images\icon\service\icon-categories2.png" />
+    <Content Include="Images\icon\service\icon-categories2_MB.png" />
+    <Content Include="Images\icon\service\icon-categories3.png" />
+    <Content Include="Images\icon\service\icon-categories3_MB.png" />
+    <Content Include="Images\icon\service\icon-categories4.png" />
+    <Content Include="Images\icon\service\icon-categories4_MB.png" />
+    <Content Include="Images\icon\service\icon-creditReserve.png" />
+    <Content Include="Images\icon\service\icon-default_reserve.png" />
+    <Content Include="Images\icon\service\icon-email.png" />
+    <Content Include="Images\icon\service\icon-export.png" />
+    <Content Include="Images\icon\service\icon-fax.png" />
+    <Content Include="Images\icon\service\icon-ipd-correct.png" />
+    <Content Include="Images\icon\service\icon-ipd-incorrect.png" />
+    <Content Include="Images\icon\service\icon-ipd.png" />
+    <Content Include="Images\icon\service\icon-location.png" />
+    <Content Include="Images\icon\service\icon-locationnear-next.png" />
+    <Content Include="Images\icon\service\icon-locationnear-prev.png" />
+    <Content Include="Images\icon\service\icon-map.png" />
+    <Content Include="Images\icon\service\icon-no_reserve.png" />
+    <Content Include="Images\icon\service\icon-opd-correct.png" />
+    <Content Include="Images\icon\service\icon-opd-incorrect.png" />
+    <Content Include="Images\icon\service\icon-opd.png" />
+    <Content Include="Images\icon\service\icon-phone.png" />
+    <Content Include="Images\icon\service\icon-pinpositionmap-active.png" />
+    <Content Include="Images\icon\service\icon-pinpositionmap.png" />
+    <Content Include="Images\icon\service\icon-reserve.png" />
+    <Content Include="Images\icon\visa.png" />
+    <Content Include="Images\image-404people.png" />
+    <Content Include="Images\image-404plug.png" />
+    <Content Include="Images\image-404title.png" />
+    <Content Include="Images\landing\01.png" />
+    <Content Include="Images\landing\02.png" />
+    <Content Include="Images\landing\03.png" />
+    <Content Include="Images\landing\04.png" />
+    <Content Include="Images\landing\icon-01.png" />
+    <Content Include="Images\landing\icon-02.png" />
+    <Content Include="Images\landing\icon-03.png" />
+    <Content Include="Images\landing\icon-04.png" />
+    <Content Include="Images\landing\icon-buy-landing.png" />
+    <Content Include="Images\landing\img-demo.jpg" />
+    <Content Include="Images\landing\img-promotion.jpg" />
+    <Content Include="Images\landing\popup-01.jpg" />
+    <Content Include="Images\landing\popup-02.jpg" />
+    <Content Include="Images\Loading2.gif" />
+    <Content Include="Images\Muanthai-FrendsClub.png" />
+    <Content Include="Images\product\img-product-cancer.png" />
+    <Content Include="Images\product\img-product-fire.png" />
+    <Content Include="Images\product\img-product-health.png" />
+    <Content Include="Images\product\img-product-motor.png" />
+    <Content Include="Images\product\img-product-other.png" />
+    <Content Include="Images\product\img-product-pa.png" />
+    <Content Include="Images\product\img-product-ta.png" />
+    <Content Include="Images\qrcodeclaimdi.png" />
+    <Content Include="Images\ui-icons_444444_256x240.png" />
+    <Content Include="Images\ui-icons_555555_256x240.png" />
+    <Content Include="Images\ui-icons_777620_256x240.png" />
+    <Content Include="Images\ui-icons_777777_256x240.png" />
+    <Content Include="Images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\bootstrap-select.min.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\init.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1-12.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.cookie.min.js" />
+    <Content Include="Scripts\jquery.mask.js" />
+    <Content Include="Scripts\jquery.navgoco.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\slick.min.js" />
+    <Content Include="Scripts\tooltipster.bundle.min.js" />
+    <Content Include="Scripts\tooltipster.core.min.js" />
+    <Content Include="Views\Callcenter\formcallcenter.aspx" />
+    <Content Include="Views\Ecommerce\Cancer\Buysmile.aspx" />
+    <Content Include="Views\Ecommerce\Cancer\Buysmileplus.aspx" />
+    <Content Include="Views\Ecommerce\Fire\Buy.aspx" />
+    <Content Include="Views\Ecommerce\Index.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy2plus.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy2plussave.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy3plussave.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy3plussaverplan.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy3save.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buy8.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Buyprb.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Compare.aspx" />
+    <Content Include="Views\Ecommerce\Motor\prb.aspx" />
+    <Content Include="Views\Ecommerce\Motor\Thankyou.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type1.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type2plus.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type2plussave.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type3plussave.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type3save.aspx" />
+    <Content Include="Views\Ecommerce\Motor\type8.aspx" />
+    <Content Include="Views\Ecommerce\Pa\Buyhappyfamily.aspx" />
+    <Content Include="Views\Ecommerce\Pa\Buyhappykids.aspx" />
+    <Content Include="Views\Ecommerce\Pa\Buyyourhappy.aspx" />
+    <Content Include="Views\Ecommerce\Ta\Buy.aspx" />
+    <Content Include="Views\Ecommerce\Ta\Buyaroundthai.aspx" />
+    <Content Include="Views\Ecommerce\Ta\BuyaroundthaiEN.aspx" />
+    <Content Include="Views\Ecommerce\Transaction.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Landingpage\Campaign1.aspx" />
+    <Content Include="Views\Landingpage\Thankyou.aspx" />
+    <Content Include="Views\Notfound\Index.aspx" />
+    <Content Include="Views\Product\Detail.aspx" />
+    <Content Include="Views\Product\Index.aspx" />
+    <Content Include="Views\Shared\footer.aspx" />
+    <Content Include="Views\Shared\header.aspx" />
+    <Content Include="Views\Shared\module\bike\formowner.aspx" />
+    <Content Include="Views\Shared\module\bike\plant.aspx" />
+    <Content Include="Views\Shared\module\bike\report.aspx" />
+    <Content Include="Views\Shared\module\bike\revieworder.aspx" />
+    <Content Include="Views\Shared\module\cancer\smileplus\formowner.aspx" />
+    <Content Include="Views\Shared\module\cancer\smileplus\plant.aspx" />
+    <Content Include="Views\Shared\module\cancer\smileplus\report.aspx" />
+    <Content Include="Views\Shared\module\cancer\smile\formowner.aspx" />
+    <Content Include="Views\Shared\module\cancer\smile\plant.aspx" />
+    <Content Include="Views\Shared\module\cancer\smile\report.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\approve.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\edit.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\introapprove.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\login.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\notapprove.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\typecompensation.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\billing\waitapprove.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\nonmotor\login.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\noparties\approve.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\noparties\edit.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\noparties\login.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\noparties\notapprove.aspx" />
+    <Content Include="Views\Shared\module\claim\checkclaim\noparties\waitapprove.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\condition.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\formaccident.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\formowner.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\login.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\report.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Motor\noparties\report_bk.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\condition.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\formaccident.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\formaccidentalone.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\formowner.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\formowneralone.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\login.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\mate.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\owner.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\report.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\reportalone.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\sonfrist.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\PA\sonsecond.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\TA\condition.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\TA\formaccident.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\TA\formowner.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\TA\login.aspx" />
+    <Content Include="Views\Shared\module\claim\informclaim\Nonmotor\TA\report.aspx" />
+    <Content Include="Views\Shared\module\contact\forcustomer\verifydownload.aspx" />
+    <Content Include="Views\Shared\module\contact\forcustomer\verifyinsurance.aspx" />
+    <Content Include="Views\Shared\module\contact\forcustomer\verifyrenew.aspx" />
+    <Content Include="Views\Shared\module\contact\formca\verifyclaimonline.aspx" />
+    <Content Include="Views\Shared\module\contact\formca\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formca\verifydownload.aspx" />
+    <Content Include="Views\Shared\module\contact\formca\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\formca\verifysearchservice.aspx" />
+    <Content Include="Views\Shared\module\contact\formcomment\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formfire\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formfire\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\paymentonline.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\paymenttransfer.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\verifyfaq.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\verifypayment.aspx" />
+    <Content Include="Views\Shared\module\contact\forminformation\verifysearchservice.aspx" />
+    <Content Include="Views\Shared\module\contact\formother\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formother\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\plant.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifycheckprice.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifyclaimonline.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifydownload.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\formotor\verifysearchservice.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\plant.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifycheckprice.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifyclaimonline.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifydownload.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\formpa\verifysearchservice.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\plant.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifycheckprice.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifyclaimonline.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifycontact.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifydownload.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifyproduct.aspx" />
+    <Content Include="Views\Shared\module\contact\formta\verifysearchservice.aspx" />
+    <Content Include="Views\Shared\module\contact\menu.aspx" />
+    <Content Include="Views\Shared\module\customer\account\editprofile.aspx" />
+    <Content Include="Views\Shared\module\customer\account\insuranceowner.aspx" />
+    <Content Include="Views\Shared\module\customer\account\profile.aspx" />
+    <Content Include="Views\Shared\module\customer\download\fileother.aspx" />
+    <Content Include="Views\Shared\module\customer\download\fileowner.aspx" />
+    <Content Include="Views\Shared\module\customer\login\checkyouremail.aspx" />
+    <Content Include="Views\Shared\module\customer\login\forgotpassword.aspx" />
+    <Content Include="Views\Shared\module\customer\login\recoverypassword.aspx" />
+    <Content Include="Views\Shared\module\customer\login\registersuccuess.aspx" />
+    <Content Include="Views\Shared\module\customer\login\resetpassword.aspx" />
+    <Content Include="Views\Shared\module\customer\login\signin.aspx" />
+    <Content Include="Views\Shared\module\customer\login\signup.aspx" />
+    <Content Include="Views\Shared\module\customer\login\signuppassword.aspx" />
+    <Content Include="Views\Shared\module\customer\login\signupregis.aspx" />
+    <Content Include="Views\Shared\module\customer\member\activityregister.aspx" />
+    <Content Include="Views\Shared\module\customer\member\allactivity.aspx" />
+    <Content Include="Views\Shared\module\customer\member\detailpromotion.aspx" />
+    <Content Include="Views\Shared\module\customer\member\privilege.aspx" />
+    <Content Include="Views\Shared\module\customer\member\promotion.aspx" />
+    <Content Include="Views\Shared\module\customer\member\relateother.aspx" />
+    <Content Include="Views\Shared\module\customer\member\relatepromotionmember.aspx" />
+    <Content Include="Views\Shared\module\customer\menucustomer.aspx" />
+    <Content Include="Views\Shared\module\customer\print\printfire.aspx" />
+    <Content Include="Views\Shared\module\customer\print\printmotor.aspx" />
+    <Content Include="Views\Shared\module\customer\print\printpa.aspx" />
+    <Content Include="Views\Shared\module\customer\print\printta.aspx" />
+    <Content Include="Views\Shared\module\fire\formowner.aspx" />
+    <Content Include="Views\Shared\module\fire\plant.aspx" />
+    <Content Include="Views\Shared\module\fire\report.aspx" />
+    <Content Include="Views\Shared\module\global\formaddress.aspx" />
+    <Content Include="Views\Shared\module\global\formcorp.aspx" />
+    <Content Include="Views\Shared\module\global\payment.aspx" />
+    <Content Include="Views\Shared\module\global\paymentcancer.aspx" />
+    <Content Include="Views\Shared\module\global\paymentfire.aspx" />
+    <Content Include="Views\Shared\module\global\paymentTA_prgrame.aspx" />
+    <Content Include="Views\Shared\module\health\formidhealth.aspx" />
+    <Content Include="Views\Shared\module\health\formowner.aspx" />
+    <Content Include="Views\Shared\module\health\plant.aspx" />
+    <Content Include="Views\Shared\module\health\report.aspx" />
+    <Content Include="Views\Shared\module\health\revieworder.aspx" />
+    <Content Include="Views\Shared\module\motor\compare\step1.aspx" />
+    <Content Include="Views\Shared\module\motor\compare\step2.aspx" />
+    <Content Include="Views\Shared\module\motor\compare\step3.aspx" />
+    <Content Include="Views\Shared\module\motor\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plussave\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plussave\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plussave\report.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plus\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plus\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai2plus\report.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussaverplan\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussaverplan\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussaverplan\report.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussave\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussave\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3plussave\report.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3save\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3save\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthai3save\report.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthaidrive8\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthaidrive8\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\muangthaidrive8\report.aspx" />
+    <Content Include="Views\Shared\module\motor\porobo\formcar.aspx" />
+    <Content Include="Views\Shared\module\motor\porobo\formowner.aspx" />
+    <Content Include="Views\Shared\module\motor\porobo\report.aspx" />
+    <Content Include="Views\Shared\module\motor\report.aspx" />
+    <Content Include="Views\Shared\module\motor\revieworder.aspx" />
+    <Content Include="Views\Shared\module\pa\happyfamily\formowner.aspx" />
+    <Content Include="Views\Shared\module\pa\happyfamily\plant.aspx" />
+    <Content Include="Views\Shared\module\pa\happyfamily\report.aspx" />
+    <Content Include="Views\Shared\module\pa\happykids\formowner.aspx" />
+    <Content Include="Views\Shared\module\pa\happykids\plant.aspx" />
+    <Content Include="Views\Shared\module\pa\happykids\report.aspx" />
+    <Content Include="Views\Shared\module\pa\yourhappy\formowner.aspx" />
+    <Content Include="Views\Shared\module\pa\yourhappy\plant.aspx" />
+    <Content Include="Views\Shared\module\pa\yourhappy\report.aspx" />
+    <Content Include="Views\Shared\module\privilege\index.aspx" />
+    <Content Include="Views\Shared\module\privilege\relateprivilege.aspx" />
+    <Content Include="Views\Shared\module\renew\detail.aspx" />
+    <Content Include="Views\Shared\module\renew\detailmotor.aspx" />
+    <Content Include="Views\Shared\module\renew\edit.aspx" />
+    <Content Include="Views\Shared\module\renew\editmotor.aspx" />
+    <Content Include="Views\Shared\module\renew\login.aspx" />
+    <Content Include="Views\Shared\module\renew\payment.aspx" />
+    <Content Include="Views\Shared\module\renew\report.aspx" />
+    <Content Include="Views\Shared\module\renew\reportnonmotor.aspx" />
+    <Content Include="Views\Shared\module\renew\report_bk.aspx" />
+    <Content Include="Views\Shared\module\service\carhelp\detail.aspx" />
+    <Content Include="Views\Shared\module\service\help\detail.aspx" />
+    <Content Include="Views\Shared\module\service\muangthaiapp\detail.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\categories.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\listcenter.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\listgarage.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\listhospital.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\nearcenter.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\neargarage.aspx" />
+    <Content Include="Views\Shared\module\service\searchservice\nearhospital.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_BK20180824.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_tap1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_tap2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_tap3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_tap4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\formowner_tap5.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\planttravel.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap5.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap_all_1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap_all_2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap_all_3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap_all_4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\en\report_tap_all_5.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_BK20180824.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_tap1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_tap2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_tap3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_tap4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\formowner_tap5.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\planttravel.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap5.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap_all_1.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap_all_2.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap_all_3.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap_all_4.aspx" />
+    <Content Include="Views\Shared\module\ta\aroundthai\report_tap_all_5.aspx" />
+    <Content Include="Views\Shared\module\ta\compare.aspx" />
+    <Content Include="Views\Shared\module\ta\happymile\formowner.aspx" />
+    <Content Include="Views\Shared\module\ta\happymile\planttravel.aspx" />
+    <Content Include="Views\Shared\module\ta\happymile\report.aspx" />
+    <Content Include="Views\Shared\start.aspx" />
+    <Content Include="Views\Sitemap\Sitemap.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon.woff" />
+    <Content Include="fonts\psl152pro.woff" />
+    <Content Include="fonts\psl152pro.woff2" />
+    <Content Include="fonts\psl154pro.woff" />
+    <Content Include="fonts\psl154pro.woff2" />
+    <Content Include="Images\icon\contact\payment.rar" />
+    <Content Include="Images\PDF\Claim FormPA.pdf" />
+    <Content Include="Images\PDF\claimother.pdf" />
+    <Content Include="Images\PDF\Claim_Travel.pdf" />
+    <Content Include="Images\PDF\formmotor.pdf" />
+    <Content Include="Images\PDF\idrive_privacypolicy.pdf" />
+    <Content Include="Images\PDF\privacypolicy.pdf" />
+    <Content Include="Images\PDF\เงื่อนไขและข้อกำหนดในการใช้งาน_Vendor.pdf" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_labels.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_panels.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_alerts.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_badges.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_button-groups.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_buttons.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_carousel.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_close.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_code.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_component-animations.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_dropdowns.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_forms.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_glyphicons.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_grid.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_input-groups.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_labels.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_list-group.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_media.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_mixins.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_modals.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_navbar.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_navs.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_normalize.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_pager.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_pagination.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_panels.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_popovers.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_print.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_progress-bars.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_responsive-embed.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_scaffolding.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_tables.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_theme.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_thumbnails.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_type.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_utilities.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_variables.scss" />
+    <Content Include="Content\Content2018\scss\bootstrap\_wells.scss" />
+    <Content Include="Content\Content2018\scss\content\_home.scss" />
+    <Content Include="Content\Content2018\scss\content\_intromenu.scss" />
+    <Content Include="Content\Content2018\scss\content\_payment.scss" />
+    <Content Include="Content\Content2018\scss\content\_report.scss" />
+    <Content Include="Content\Content2018\scss\layout\_alerterror.scss" />
+    <Content Include="Content\Content2018\scss\layout\_banner.scss" />
+    <Content Include="Content\Content2018\scss\layout\_breadcrumbs.scss" />
+    <Content Include="Content\Content2018\scss\layout\_button.scss" />
+    <Content Include="Content\Content2018\scss\layout\_collapse.scss" />
+    <Content Include="Content\Content2018\scss\layout\_footer.scss" />
+    <Content Include="Content\Content2018\scss\layout\_forms.scss" />
+    <Content Include="Content\Content2018\scss\layout\_global.scss" />
+    <Content Include="Content\Content2018\scss\layout\_header.scss" />
+    <Content Include="Content\Content2018\scss\layout\_navigation.scss" />
+    <Content Include="Content\Content2018\scss\layout\_openhighlight.scss" />
+    <Content Include="Content\Content2018\scss\layout\_styleinput.scss" />
+    <Content Include="Content\Content2018\scss\main.scss" />
+    <Content Include="Content\Content2018\scss\_bootstrap.scss" />
+    <Content Include="Content\Content2018\scss\_fonts.scss" />
+    <Content Include="Content\Content2018\scss\_reset.scss" />
+    <Content Include="Content\Content2018\scss\_slick-theme.scss" />
+    <Content Include="Content\Content2018\scss\_slick.scss" />
+    <Content Include="Content\Content2018\scss\_variables.scss" />
+    <Content Include="Content\Content2018\scss\content\_transaction.scss" />
+    <Content Include="Content\Content2018\scss\layout\_modal.scss" />
+    <Content Include="Images\PDF\Motor Add On_cover.pdf" />
+    <Content Include="Content\Content2018\scss\content\_compare.scss" />
+    <Content Include="Content\Content2018\scss\content\_product.scss" />
+    <Content Include="Content\Content2018\scss\content\_landingpage.scss" />
+    <Content Include="Content\Content2018\scss\content\_notfound.scss" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45085</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:45085/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

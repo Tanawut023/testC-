@@ -1,0 +1,2891 @@
+.line-form{
+	height: 1px;
+	background-color: #bebebe;
+	margin: 25px -10px;
+}
+
+.form-detail {
+    .txt-to{
+        position: absolute;
+        font-family: $font-main;
+        font-size: 20px;
+        line-height: 20px;
+        color: #666666;
+        right: -17px;
+        top: 12px;
+        @media only screen and (max-width: 767px) {
+            font-size: 23px;
+            margin: 10px 0;
+            position: relative;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+    .line-rowInput {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .line-colMB {
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+    .line-colMB-top {
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+    .line-colMB-Dtop{
+        margin-top: 15px;
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+    }
+
+    .line-rowInput-in {
+        .line-colMB {
+            margin-bottom: 15px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .line-colMB-in-title {
+        margin-bottom: 15px;
+    }
+
+    .row-checkbox {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .row-checkbox-txt {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+        margin-bottom: 20px;
+        li {
+            a {
+                border-radius: 0;
+                border: none;
+                font-family: $font-main;
+                font-size: 22px;
+                background-color: #CCCCCC;
+                color: #fff;
+                padding: 10px 16px;
+
+                span {
+                    font-size: 18px;
+                    position: relative;
+                    top: -5px;
+                }
+
+                @media (max-width: 1199px) {
+                    padding: 10px 8.2px;
+                }
+
+                @media (max-width: 999px) {
+                    padding: 10px 9.2px;
+                }
+                /*i{
+					position: relative;
+					top: 2px;
+					font-size: 18px;
+					margin-left: 7px;
+					opacity: 0;
+				}*/
+            }
+        }
+        li.active {
+            a {
+                color: #fff;
+                background-color: $bg-primary;
+
+                i {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    border: none;
+                }
+
+                &:focus {
+                    border: none;
+                }
+            }
+        }
+        // ใส่กันTA 
+        li.disabled{
+            a{
+                background-color: #d7d7d7 !important; 
+                color: #ffffff !important;
+            }
+        }
+    }
+
+    .warning {
+        font-family: $font-main;
+        background-color: #f0f0f0;
+        border: 1px solid #b4b4b4;
+        font-size: $font-medium;
+        padding: 10px;
+        line-height: 20px;
+
+        span {
+            color: #f9981c;
+        }
+
+        label {
+            font-size: $font-small;
+            font-weight: normal;
+        }
+    }
+
+    .annotation {
+        font-family: $font-main;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 5px 0 15px;
+
+        span {
+            font-weight: normal;
+            color: #1595d3;
+            font-size: 20px;
+        }
+
+        .title-annotation {
+            font-size: 22px;
+        }
+    }
+
+    .annotation2 {
+        font-family: $font-main;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .bg-txt-title {
+        background-color: $bg-primary;
+        font-family: $font-main;
+        font-size: 26px;
+        color: #fff;
+        padding-left: 15px;
+        // renew motor
+        .line-vertical {
+            margin-left: 10px;
+
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .detail-renewMotor {
+            font-size: 24px;
+            line-height: 24px;
+            margin-left: 10px;
+
+            img {
+                position: relative;
+                top: -2px;
+            }
+
+            @media (max-width: 500px) {
+                display: block;
+                font-size: 20px;
+                line-height: 20px;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    // คลิกicon  radioติ๊กด้วย
+    
+
+    .-last {
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+    // ไอคอนวงกลมมี Text ข้างใน
+    .item-Radio {
+        label {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .iconRadio {
+            font-weight: normal;
+            margin-left: 33px;
+            margin-top: -13px;
+        }
+    }
+    // ไอคอนวงกลมมี Text ข้างๆ
+    .item-RadioH {
+        label {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .detail-radio {
+            font-weight: normal;
+            margin-left: 30px;
+            margin-top: -13px;
+            //opacity: 0.5;
+        }
+
+        .detail-radio.active {
+            //opacity: 1;
+        }
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    // ไอคอน2บรรทัดในแนวตั้ง(Car,TA)
+    .item-RadioV {
+        label {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .iconRadio {
+            font-weight: normal;
+            padding-left: 25px;
+            //opacity: 0.5;
+            .icon-img {
+                margin: -15px 5px 5px;
+            }
+
+            .txt-rdo {
+                line-height: 20px;
+            }
+        }
+
+        .iconRadio.active {
+            //opacity: 1;
+        }
+
+        .iconRadioV2 {
+            padding-left: 30px;
+            //width: 90px;
+            // TA worldwide
+            .txt-rdo-long {
+                text-align: left;
+                width: 100px;
+                word-wrap: break-word;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    //เลือกประเภทรถ
+    .content-rdo-car {
+        text-align: center;
+        font-size: 22px;
+        font-family: $font-main;
+        color: $font-color-desc;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+
+        .icon-img {
+            margin: 0 5px;
+        }
+    }
+
+    .txt-blue {
+        .content-rdo-car {
+            color: #1595d3;
+        }
+    }
+    //กรณี radio หรือ checkbox แล้วมีภาพ
+    .icon-img-inline {
+        display: inline-block;
+        margin-left: 5px
+    }
+    //กรณี radio หรือ checkbox แล้วมี text
+    .icon-txt-inline {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        text-align: center;
+        background-color: #666666;
+        font-family: $font-main;
+        font-size: 22px;
+        color: #fff;
+        padding-top: 9px;
+    }
+
+    .icon-txt-inline.active {
+        background-color: #1595d3;
+    }
+
+
+    .bg-input {
+        width: 100%;
+        padding: 10px 5px;
+        background-color: #666;
+
+        .content-rdo-inline {
+            color: #fff;
+        }
+
+        input[type=radio] + label {
+            width: 100%;
+        }
+
+        input[type=radio]:checked + label {
+            width: 100%;
+        }
+    }
+
+    .bg-input.active {
+        background-color: #1595d3;
+    }
+
+
+    .form-group {
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .selec-date {
+        position: relative;
+        width: 100%;
+        //font-family: $font-main;
+        .input-group-addon {
+            background: none;
+            border: none;
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            z-index: 9;
+        }
+    }
+
+    .input-group-addon {
+        .img-calendar {
+            background-image: url('../../../../Images/icon/icon-calenda2.png');
+            width: 25px;
+            height: 26px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: 1px;
+            cursor: pointer;
+        }
+    }
+
+
+
+    .tab-form {
+        margin-top: 40px;
+
+        .nav-tabs {
+            li {
+                a {
+                    background-color: #666666;
+
+                    &:hover {
+                        background-color: $color-blue;
+                    }
+                }
+            }
+
+            li.active {
+                a {
+                    background-color: $color-blue;
+                }
+            }
+
+            li.disable {
+                display: none;
+            }
+        }
+
+        .tab-content {
+            margin-top: 30px;
+            @media only screen and (max-width: 480px) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+    // รายการเบี้ยประกัน
+    .total_premiums_all {
+        .table {
+            tbody {
+                tr {
+                    td {
+                        border: none;
+                        font-family: $font-main;
+                        font-size: 25px;
+                        line-height: 25px;
+                        color: $color-gray;
+                        .price{
+                            float: right;
+                            .main-price{
+                                font-family: $font-main;
+                                font-size: 36px;
+                                line-height: 26px;
+                                color: #666666;
+                                //float: left;
+                            }
+                            .point-price{
+                                font-family: $font-main;
+                                font-size: 24px;
+                                line-height: 22px;
+                                color: #666666;
+                                //float: left;
+                                position: relative;
+                                //top: 5px;
+                            }
+                            .current {
+                                font-family: $font-main;
+                                font-size: 23px;
+                                line-height: 22px;
+                                color: $color-gray;
+                                //float: left;
+                                position: relative;
+                                //top: 6px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+
+                    td.left {
+                        text-align: left;
+                    }
+
+                    td.right {
+                        text-align: right;
+                    }
+                }
+                tr.divider{
+                    border-bottom: 1px solid #cccccc;
+                }
+            }
+        }
+    }
+
+
+    .address-owner{
+        .form-group{
+            margin-bottom: 15px !important;
+        }
+    }
+
+
+    /*-----------------------------------------  Motor  -------------------------------------------------*/
+    .all-price {
+        //text-align: right;
+        @media screen and (max-width: 999px) {
+            //text-align: right;
+            //margin-top: 40px;
+        }
+
+        .title {
+            font-family: $font-main;
+            font-size: 26px;
+            line-height: 52px;
+            color: $color-blue;
+            margin-bottom: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            float: left;
+        }
+
+        .price {
+            border: 1px solid $color-blue;
+            background-color: $color-blue;
+            padding: 10px;
+            display: block;
+            vertical-align: middle;
+            padding: 10px 15px;
+            //float: right;
+            .text-price {
+                font-family: $font-main;
+                font-size: 46px;
+                line-height: 26px;
+                color: #ffffff;
+
+                .point {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 23px;
+                    color: #ffffff;
+                }
+
+                .current {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 23px;
+                    color: #ffffff;
+                }
+            }
+
+            .text-price.-totalprice {
+                .main-price {
+                    font-family: $font-main;
+                    font-size: 46px;
+                    line-height: 26px;
+                    color: #ffffff;
+                    float: left;
+                }
+
+                .point-price {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: #ffffff;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                }
+
+                .current {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: #ffffff;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    .reduce-price {
+        .before-price {
+            .text-head {
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 23px;
+                color: #B1B1B1;
+            }
+
+            .price {
+                font-family: $font-main;
+                font-size: 40px;
+                line-height: 40px;
+                color: #666666;
+
+                .point {
+                    font-size: 23px;
+                    line-height: 23px;
+                }
+
+                .currency {
+                    font-size: 23px;
+                    line-height: 23px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .after-price {
+            margin-top: 15px;
+
+            .text-head {
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 23px;
+                color: #B1B1B1;
+            }
+
+            .price {
+                font-family: $font-main;
+                font-size: 40px;
+                line-height: 40px;
+                color: $color-blue;
+
+                .point {
+                    font-size: 23px;
+                    line-height: 23px;
+                }
+
+                .currency {
+                    font-size: 23px;
+                    line-height: 23px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    // ปุ่มเปลี่ยนค่า ท่านสามารถลดเบี้ยประกันโดย
+    .action_premiums {
+        margin-top: 20px;
+
+        .edit {
+            background-color: $color-gray;
+            color: #ffffff;
+            font-family: $font-main;
+            font-size: 22px;
+            line-height: 22px;
+            text-align: center;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        .save {
+            background-color: $color-blue;
+            color: #ffffff;
+            font-family: $font-main;
+            font-size: 22px;
+            line-height: 22px;
+            text-align: center;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+    }
+    // reviewOrder
+    .order-head {
+        margin: 30px 0 20px;
+
+        .price-insurance {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+            }
+        }
+
+        .detail-insurance {
+            display: inline-block;
+            vertical-align: middle;
+
+            @media screen and (max-width: 480px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .price-insurance {
+        .bg {
+            background-image: url('../../../../Images/icon/bg-price-insurance.png');
+            width: 280px;
+            height: 295px;
+            background-repeat: no-repeat;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 80px;
+
+            .title {
+                font-family: $font-main;
+                font-size: 26px;
+                line-height: 26px;
+                color: $color-blue;
+            }
+
+            .price {
+                font-family: $font-main;
+                font-size: 60px;
+                line-height: 50px;
+                color: $color-blue;
+
+                span {
+                    font-size: 40px;
+                }
+            }
+
+            .current {
+                font-family: $font-main;
+                font-size: 26px;
+                line-height: 26px;
+                color: $color-gray;
+            }
+
+            @media screen and (max-width: 767px) {
+                background-image: url('../../../../Images/icon/bg-price-insurance2x.png');
+                width: 180px;
+                height: 191px;
+                padding-top: 50px;
+
+                .title {
+                    font-size: 23px;
+                    line-height: 23px;
+                }
+
+                .price {
+                    font-size: 40px;
+                    line-height: 40px;
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+
+                .current {
+                    font-size: 23px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+
+    .detail-insurance {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: block;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .title {
+                    font-family: $font-main;
+                    font-size: 26px;
+                    line-height: 26px;
+                    color: $color-blue;
+                }
+
+                .detail {
+                    font-family: $font-main;
+                    font-size: 26px;
+                    line-height: 26px;
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+
+    .conclude {
+        text-align: center;
+        margin-bottom: 40px;
+
+        .title {
+            font-family: $font-main;
+            font-size: 26px;
+            line-height: 26px;
+            color: $color-blue;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            border: 1px solid $color-blue;
+            padding: 10px;
+            display: inline-block;
+            width: 240px;
+            cursor: pointer;
+
+            .text-price {
+                float: left;
+
+                .main-price {
+                    font-family: $font-main;
+                    font-size: 46px;
+                    line-height: 26px;
+                    color: $color-blue;
+                    float: left;
+                }
+
+                .point-price {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: $color-blue;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                }
+
+                .current {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: $color-gray;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                    margin-left: 10px;
+                }
+            }
+
+            .icon {
+                float: right;
+                line-height: 26px;
+            }
+        }
+
+        .result-box {
+            margin-top: 20px;
+            max-height: 0;
+            transition: max-height 0.5s ease-out;
+            overflow: hidden;
+
+            .table {
+                thead {
+                    tr {
+                        background-color: #1595d3;
+
+                        th {
+                            font-family: $font-main;
+                            font-size: 26px;
+                            line-height: 26px;
+                            text-align: center;
+                            color: #ffffff;
+                            border: none;
+                        }
+
+                        th.left {
+                            text-align: left;
+                        }
+
+                        th.right {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            border: none;
+                            font-family: $font-main;
+                            font-size: 23px;
+                            line-height: 23px;
+                            color: $color-gray;
+                        }
+
+                        td.left {
+                            text-align: left;
+                        }
+
+                        td.right {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                tfoot {
+                    tr {
+                        background-color: $color-blue;
+
+                        td {
+                            font-family: $font-main;
+                            font-size: 26px;
+                            line-height: 26px;
+                            color: #ffffff;
+                            border: none;
+                        }
+
+                        td.left {
+                            text-align: left;
+                        }
+
+                        td.right {
+                            text-align: right;
+                        }
+
+                        td.total {
+                            font-size: 40px;
+
+                            .point {
+                                font-family: $font-main;
+                                font-size: 23px;
+                                line-height: 23px;
+                                color: #ffffff;
+                            }
+
+                            .current {
+                                font-family: $font-main;
+                                font-size: 23px;
+                                line-height: 23px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .result-box.active {
+            height: auto;
+            max-height: 270px;
+            transition: max-height 0.25s ease-in;
+        }
+    }
+
+    
+
+    .custom_more {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: block;
+                margin-bottom: 20px;
+                &:first-child {
+                    //margin-top: 30px;
+                }
+
+                .content-rdo-inline{
+                    font-size: 24px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        .detail-revieworder-collapse {
+            .result-car-revieworder {
+                .table-responsive {
+                    padding-top: 15px;
+
+                    .table {
+                        margin-bottom: 0;
+                        thead {
+                            tr {
+                                background-color: #1595d3;
+
+                                th {
+                                    font-family: $font-main;
+                                    font-size: 26px;
+                                    line-height: 26px;
+                                    text-align: center;
+                                    color: #ffffff;
+                                    border: none;
+
+                                    &:first-child {
+                                        width: 80%;
+                                    }
+                                }
+
+                                th.left {
+                                    text-align: left;
+                                }
+
+                                th.right {
+                                    text-align: right;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    border: none;
+                                    font-family: $font-main;
+                                    font-size: 23px;
+                                    line-height: 23px;
+                                    color: $color-gray;
+                                    text-align: center;
+                                }
+
+                                td.left {
+                                    text-align: left;
+                                }
+
+                                td.right {
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+                .head-protect{
+                    background-color: $color-blue;
+                    padding: 7px 10px;
+                    margin: 15px 0;
+                    .title-protect{
+                        float: left;
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #ffffff;
+                    }
+                    .price-protect{
+                        float: right;
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #ffffff;
+                    }
+                }
+                .desc-protect{
+                    font-family: $font-main;
+                    font-size: 22px;
+                    line-height: 22px;
+                    color: #1595d3;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .conclude-total {
+        text-align: right;
+        margin-bottom: 40px;
+        //margin-top: 30px;
+        .title {
+            font-family: $font-main;
+            font-size: 26px;
+            line-height: 26px;
+            color: $color-blue;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .price {
+            border: 1px solid $color-blue;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 240px;
+            cursor: pointer;
+            margin-left: 15px;
+
+            .text-price {
+                float: left;
+
+                .main-price {
+                    font-family: $font-main;
+                    font-size: 46px;
+                    line-height: 26px;
+                    color: $color-blue;
+                    float: left;
+                }
+
+                .point-price {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: $color-blue;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                }
+
+                .current {
+                    font-family: $font-main;
+                    font-size: 23px;
+                    line-height: 26px;
+                    color: $color-gray;
+                    float: left;
+                    position: relative;
+                    top: 5px;
+                    margin-left: 10px;
+                }
+            }
+
+            .icon {
+                float: right;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .beforePrice {
+        font-family: $font-main;
+        margin: 0;
+        display: none;
+
+        .txt {
+            font-size: 22px;
+            color: #1595d3;
+            float: left;
+            width: 100%;
+            padding-top: 7px;
+        }
+    }
+
+    .afterPrice {
+        font-family: $font-main;
+        margin: 10px 0;
+        display: none;
+
+        .txt {
+            font-size: 22px;
+            color: #1595d3;
+            float: left;
+            width: 100%;
+            padding-top: 7px;
+        }
+    }
+
+    .style-Price {
+        float: left;
+        //width: 218px;
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
+        background-color: #666;
+
+        .content-rdo-inline {
+            color: #fff;
+            font-size: 36px;
+
+            .txt-currency {
+                font-size: 22px;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+
+        input[type=radio] + label.icon-rdo-price {
+            background: url("../../images/icon/icon-check-bgwhite.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        input[type=radio]:checked + label.icon-rdo-price {
+            background: url("../../images/icon/icon-checked.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+
+    .style-Price.active {
+        background-color: #1595d3;
+    }
+
+    .final-price {
+        margin-bottom: 20px;
+
+        .title {
+            font-family: $font-main;
+            font-size: 26px;
+            line-height: 56px;
+            color: $color-blue;
+            float: left;
+        }
+
+        .price-all {
+            float: right;
+            background-color: $color-blue;
+            padding: 15px;
+
+            .main-price {
+                font-family: $font-main;
+                font-size: 46px;
+                line-height: 26px;
+                color: #ffffff;
+                float: left;
+            }
+
+            .point-price {
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 26px;
+                color: #ffffff;
+                float: left;
+                position: relative;
+                top: 5px;
+            }
+
+            .current {
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 26px;
+                color: #ffffff;
+                float: left;
+                position: relative;
+                top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+    // formOwner
+    .form-owner {
+        margin-bottom: 25px;
+    }
+
+    .tab-motor {
+        li {
+            @media only screen and (max-width: 480px) {
+                width: 50%;
+                margin: 0;
+                &:first-child {
+                    width: 100%;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+    // formidCar
+    .result-car {
+        margin: 20px 0;
+
+        .show-car {
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 10px;
+
+            @media (max-width: 480px) {
+                margin-right: 0;
+            }
+
+            .pic {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .txt-year-car {
+                font-family: $font-main;
+                font-size: 30px;
+                color: #1595d3;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 15px;
+            }
+        }
+
+        .show-detail-car {
+            display: inline-block;
+            line-height: 28px;
+            border-left: 1px solid #bebebe;
+            vertical-align: middle;
+            padding-left: 30px;
+
+            @media (max-width: 680px) {
+                display: block;
+                border-left: none;
+                padding-left: 0;
+            }
+
+            .content {
+                display: inline-block;
+                vertical-align: middle;
+
+                .name-car {
+                    font-family: $font-main;
+                    font-size: 30px;
+                    color: #666666;
+                }
+
+                .detail-car {
+                    font-family: $font-main;
+                    font-size: 22px;
+                    color: #666666;
+
+                    .title {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    .detail {
+                        display: inline-block;
+                        vertical-align: top;
+
+                        @media (max-width: 400px) {
+                            width: 75%;
+                        }
+                    }
+
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+
+                .price-car {
+                    font-family: $font-main;
+                    font-size: 24px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+
+    .section-sent-img {
+        position: relative;
+        //margin: 0 0 30px;
+        margin: 0 0 20px;
+
+        input[type=radio] + label.type-sent-img {
+            background: url("../../images/icon/icon-check-bgwhite.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+            background-position: 0 40%;
+        }
+
+        input[type=radio]:checked + label.type-sent-img {
+            background: url("../../images/icon/icon-checked.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+            background-position: 0 40%;
+        }
+
+        .alert-warning {
+            width: 180px;
+        }
+
+        .box-type-sent-img {
+            border: 1px solid #bebebe;
+            background-color: #666;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+
+            @media (max-width: 1199px) {
+                height: 110px;
+            }
+
+            @media (max-width: 767px) {
+                height: auto;
+            }
+
+            .detail-radio {
+                opacity: 1;
+            }
+
+            .icon {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .icon-officer {
+                background-image: url(../../Images/icon/icon-sent-callcenter.png);
+                width: 85px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+            }
+
+            .icon-claimdi {
+                background-image: url(../../Images/icon/icon-sent-claimdi.png);
+                width: 85px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+            }
+
+            .content-rdo-inline {
+                vertical-align: middle;
+                color: #fff;
+                width: 240px;
+                font-size: 21px;
+                line-height: 21px;
+
+                @media (max-width: 1199px) {
+                    width: 190px;
+                }
+
+                @media (max-width: 767px) {
+                    width: 500px;
+                }
+
+                @media (max-width: 685px) {
+                    width: 450px;
+                }
+
+                @media (max-width: 635px) {
+                    width: 400px;
+                }
+
+                @media (max-width: 585px) {
+                    width: 350px;
+                }
+
+                @media (max-width: 550px) {
+                    width: 250px;
+                }
+
+                @media (max-width: 480px) {
+                    width: 220px;
+                }
+
+                @media (max-width: 405px) {
+                    width: 150px;
+                }
+
+                @media (max-width: 335px) {
+                    width: 130px;
+                }
+            }
+        }
+
+        .type-claimdi {
+            @media screen and (max-width: 767px) {
+                margin-top: 20px;
+            }
+        }
+
+        .type-officer {
+            @media screen and (max-width: 1199px) {
+                padding-top: 11px;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding-top: 5px;
+            }
+        }
+
+        .active {
+            //border: 1px solid #1595d3;
+            background-color: #1595d3;
+
+            .icon-officer {
+                background-position: top center;
+            }
+
+            .icon-claimdi {
+                background-position: top center;
+            }
+
+            .content-rdo-inline {
+                color: #fff;
+            }
+        }
+    }
+
+    .officerphoto {
+        margin: 25px 0 0;
+        display: none;
+    }
+
+    .officerphoto {
+        position: relative;
+
+        .date-contacted.active {
+            background-color: #ffffff;
+        }
+
+        .alert-warning {
+            position: relative;
+            top: 6px;
+        }
+    }
+
+    .claimdi {
+        margin: 25px 0 0;
+        display: none;
+
+        .txt-notation {
+            font-family: $font-main;
+            font-size: 24px;
+            color: #1595d3;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+
+        .download-app {
+            div {
+                display: inline-block;
+            }
+
+            .img-qr {
+                //width: 123px;
+            }
+
+            .google {
+                text-align: center;
+
+                img {
+                    display: block;
+                    width: auto;
+                    margin: auto;
+                }
+            }
+
+            .apple {
+                text-align: center;
+                margin-left: 10px;
+
+                img {
+                    display: block;
+                    width: auto;
+                    margin: auto;
+                }
+            }
+        }
+
+        #QR {
+            display: block;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        #APP {
+            display: none;
+
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        .step-download {
+            margin: 15px 0;
+
+            .txt-title {
+                font-family: $font-main;
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .btn {
+                margin-top: 0;
+                margin-left: 0;
+                width: 100%;
+                margin-bottom: 10px;
+
+                .text {
+                    float: left;
+                }
+
+                .icon-btn-arrow.-right {
+                    float: right;
+                }
+            }
+
+            .txt-case {
+                font-family: $font-main;
+                font-size: 20px;
+                color: $font-color-desc;
+                line-height: 20px;
+            }
+        }
+    }
+    /*-----------------------------------------  TA  -------------------------------------------------*/
+
+    .fixed-heght-form-group{
+        height: 75px;
+        @media only screen and (max-width: 767px) {
+            height: auto;
+        }
+    }
+
+    .numday{
+        .num{
+            font-family: $font-main;
+            font-size: 50px;
+            line-height: 40px;
+            color: $color-blue;
+            display: inline-block;
+            vertical-align: baseline;
+        }
+        .text-day{
+            font-family: $font-main;
+            font-size: 22px;
+            line-height: 22px;
+            color: $color-blue;
+            display: inline-block;
+            vertical-align: baseline;
+        }
+        @media only screen and (max-width: 767px) {
+            padding: 0 10px;
+        }
+    }
+    /* TA Planttravel */
+    // เส้นทางการเดินทาง
+    #inTravel {
+        background-image: url('../../../../Images/icon/icon-inTravel.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #inTravel.active {
+        background-position: center bottom;
+    }
+
+    #outTravel {
+        background-image: url('../../../../Images/icon/icon-outTravel.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #outTravel.active {
+        background-position: center bottom;
+    }
+    // โซนการเดินทาง
+    #ww_scg {
+        background-image: url('../../../../Images/icon/icon-ww_scg.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #ww_scg.active {
+        background-position: center bottom;
+    }
+
+    #asia {
+        background-image: url('../../../../Images/icon/icon-asia.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #asia.active {
+        background-position: center bottom;
+    }
+
+    #aec {
+        background-image: url('../../../../Images/icon/icon-aec.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #aec.active {
+        background-position: center bottom;
+    }
+    // รูปแบบการเดินทาง
+    // รายวัน
+    #iconSingleTrip {
+        background-image: url('../../../../Images/icon/icon-day.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #iconSingleTrip.active {
+        background-position: center bottom;
+    }
+    // รายปี
+    #iconYearTrip {
+        background-image: url('../../../../Images/icon/icon-year.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #iconYearTrip.active {
+        background-position: center bottom;
+    }
+    // เอกสารกรมธรรม์
+    // ไทย
+    #iconDocThai {
+        background-image: url('../../../../Images/icon/icon-docThai.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #iconDocThai.active {
+        background-position: center bottom;
+    }
+    // อังกฤษ
+    #iconDocEng {
+        background-image: url('../../../../Images/icon/icon-docEn.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #iconDocEng.active {
+        background-position: center bottom;
+    }
+    // ระหว่างประเทศ
+    #International {
+        //display: none;
+    }
+    // ระหว่างประเทศ > รูปแบบการเดินทาง
+    #SingleTrip {
+        display: none;
+    }
+
+    #Yearly {
+        display: none;
+    }
+    // ภายในประเทศ
+    #DomesticLine1 {
+        display: none;
+    }
+
+    #DomesticLine2 {
+        display: none;
+    }
+
+    // จำนวนผู้เอาประกัน
+    .list-people-travel {
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+        @media (max-width: 999px) {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                background-color: #666;
+                width: 50px;
+                padding: 5px 0;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #1595d3;
+                }
+            }
+
+            li.active {
+                background-color: #1595d3;
+            }
+        }
+    }
+    // เอกสารกรมธรรม์(ไม่ใช้แล้ว)
+    .list-insu-doc {
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+        @media (max-width: 999px) {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                background-color: #666;
+                width: 70px;
+                padding: 5px;
+                text-align: center;
+                cursor: pointer;
+                color: #fff;
+                font-family: $font-main;
+                font-size: $font-small;
+                line-height: 22px;
+
+                &:hover {
+                    background-color: #1595d3;
+                }
+            }
+
+            li.active {
+                background-color: #1595d3;
+            }
+        }
+    }
+    /* TA Form owner Tab */
+    .tab-dataowner {
+        .tab-ta {
+            border-bottom: none;
+            margin-bottom: 20px;
+
+            li {
+                a {
+                    border-radius: 0;
+                    border: none;
+                    font-family: $font-main;
+                    font-size: 22px;
+                    background-color: #4d4d4d;
+                    color: #fff;
+                    padding: 0;
+                    /*i{
+                        font-size: 18px;
+                    }*/
+                }
+
+                &:nth-child(2) {
+                    a {
+                        margin-right: 2px !important;
+                    }
+                }
+
+                &:nth-child(4) {
+                    a {
+                        margin-right: 2px !important;
+                    }
+                }
+
+                &:nth-child(5) {
+                    a {
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+            li.active {
+                a {
+                    color: #fff;
+                    background-color: $bg-primary;
+
+                    i {
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        border: none;
+                    }
+
+                    &:focus {
+                        border: none;
+                    }
+                }
+            }
+
+            li.disabled {
+                a {
+                    background-color: #4d4d4d;
+                    color: #fff;
+                    opacity: 0.1;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+    /* TA Form owner สัญชาติ */
+    .icon_NationThai {
+        background-image: url('../../../../Images/icon/icon-nationTH.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    .icon_NationThai.active {
+        background-position: center bottom;
+    }
+
+    .icon_NationOther {
+        background-image: url('../../../../Images/icon/icon-nationOther.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    .icon_NationOther.active {
+        background-position: center bottom;
+    }
+    // *คนที่ 2-4 อยู่ใน PA
+    // คนที่ 1
+    #nation_th {
+        display: none;
+    }
+
+    #nation_other, #nation_other1{
+        display: none;
+        margin-top: -10px;
+    }
+
+    #id_passport, #id_passport1{
+        display: none;
+    }
+    // คนที่ 5
+    #nation_th5 {
+        display: none;
+    }
+
+    #nation_other5 {
+        display: none;
+        margin-top: -10px;
+    }
+
+    #id_passport5 {
+        display: none;
+    }
+    /* TA Form owner ผู้รับผลประโยชน์ */
+    .list-beneficiary {
+        margin-bottom: 10px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 10px;
+
+                @media (max-width: 999px) {
+                    margin-top: 10px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .icon-beneficiary1 {
+                    background-image: url(../../Images/icon/icon-beneficiary1.png);
+                    width: 46px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    cursor: pointer;
+                    background-position: top center;
+                }
+
+                .icon-beneficiary2 {
+                    background-image: url(../../Images/icon/icon-beneficiary2.png);
+                    width: 61px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    cursor: pointer;
+                    background-position: top center;
+                }
+            }
+
+            li.active {
+                .icon-beneficiary1 {
+                    background-position: bottom center;
+                }
+
+                .icon-beneficiary2 {
+                    background-position: bottom center;
+                }
+            }
+        }
+    }
+
+    .beneficiary2 {
+        display: none;
+    }
+    // คนที่ 1
+    // คำนำหน้า
+    #ddl_th, #ddl_th {
+        display: none;
+    }
+
+    #ddl_other, #ddl_other1 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 1
+    #ddl_otherbenefi {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 2
+    #ddl_otherbenefi2 {
+        display: none;
+    }
+    // คนที่ 5
+    // คำนำหน้า
+    #ddl_th5 {
+        display: none;
+    }
+
+    #ddl_other5 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 1
+    #ddl_otherbenefi5_1 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 2
+    #ddl_otherbenefi5_2 {
+        display: none;
+    }
+
+    .tab-ta {
+        li {
+            @media only screen and (max-width: 480px) {
+                width: 50%;
+                margin: 0;
+                &:first-child {
+                    width: 100%;
+                    margin-bottom: 2px;
+                }
+                &:nth-child(2){
+                    margin-bottom: 2px;
+                }
+                &:nth-child(3){
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+    /*-----------------------------------------  /TA  -------------------------------------------------*/
+
+    /*-----------------------------------------  PA  -------------------------------------------------*/
+
+    .QuestionPA{
+        padding-left: 35px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 767px) {
+        }
+    }
+
+    /* PA Form owner Tab */
+    .tab-dataowner {
+        margin-top: 2px;
+
+        .nav-tabs {
+            border-bottom: none;
+
+            li {
+                width: 50%;
+                margin-bottom: 2px;
+                text-align: center;
+                /*a.aler-warning{
+                    border: 2px solid #ff4000;
+                }
+                a.aler-pass{
+                    border: 2px solid #4d4d4d;
+                }*/
+                &:nth-child(2) {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+
+                &:nth-child(4) {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            li.active {
+                /*a.aler-warning{
+                    border: 2px solid #ff4000;
+                }
+                a.aler-pass{
+                    border: 2px solid #1595d3;
+                }*/
+            }
+        }
+    }
+
+    .tab-pa {
+        li {
+            @media only screen and (max-width: 480px) {
+                width: 50%;
+                margin-bottom: 2px;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .document-workpermit {
+        margin-top: 15px;
+        position: relative;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                float: left;
+                margin: 0 5px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .icon-file-pdf {
+                    background-color: #bebebe;
+                    text-align: center;
+                    padding: 20px 30px;
+
+                    i {
+                        font-size: 40px;
+                        color: #666;
+                    }
+                }
+
+                .detail-file {
+                    font-family: $font-main;
+                    position: absolute;
+                    bottom: 0;
+
+                    @media (max-width: 465px) {
+                        position: relative;
+                    }
+
+                    .txt {
+                        color: $color-blue;
+                        font-size: $font-small;
+                        line-height: 22px;
+
+                        span {
+                            color: red;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .txt-file {
+                        color: $color-blue;
+                        font-size: $font-small;
+                        font-weight: normal;
+                        position: relative;
+                        top: 3px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    /* PA Form owner ระบุ/ไม่ระบุ */
+    // คู่สมรส
+    #specifyDetail2 {
+        display: none;
+    }
+    // บุตรคนที่ 1
+    #specifyDetail3 {
+        display: none;
+    }
+    // บุตรคนที่ 2
+    #specifyDetail4 {
+        display: none;
+    }
+    /* PA Form owner สัญชาติอื่น */
+    // ผุ้เอาประกัน
+    #workpermit {
+        display: none;
+    }
+    // คู่สมรส
+    #nation_th2 {
+        display: none;
+    }
+
+    #nation_other2 {
+        display: none;
+        margin-top: -10px;
+    }
+
+    #id_passport2 {
+        display: none;
+    }
+
+    #workpermit2 {
+        display: none;
+    }
+    // บุตรคนที่ 1
+    #nation_th3 {
+        display: none;
+    }
+
+    #nation_other3 {
+        display: none;
+        margin-top: -10px;
+    }
+
+    #id_passport3 {
+        display: none;
+    }
+    // บุตรคนที่ 2
+    #nation_th4 {
+        display: none;
+    }
+
+    #nation_other4 {
+        display: none;
+        margin-top: -10px;
+    }
+
+    #id_passport4 {
+        display: none;
+    }
+    /* PA Form owner ชื่อ นามสกุล*/
+    // คู่สมรส
+    // คำนำหน้า
+    #ddl_th2 {
+        display: none;
+    }
+
+    #ddl_other2 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 1
+    #ddl_otherbenefi2_1 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 2
+    #ddl_otherbenefi2_2 {
+        display: none;
+    }
+    // บุตรคนที่ 1
+    // คำนำหน้า
+    #ddl_th3 {
+        display: none;
+    }
+
+    #ddl_other3 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 1
+    #ddl_otherbenefi3_1 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 2
+    #ddl_otherbenefi3_2 {
+        display: none;
+    }
+    // บุตรคนที่ 2
+    // คำนำหน้า
+    #ddl_th4 {
+        display: none;
+    }
+
+    #ddl_other4 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 1
+    #ddl_otherbenefi4_1 {
+        display: none;
+    }
+    // คำนำหน้า ผู้รับผลประโยชน์ 2
+    #ddl_otherbenefi4_2 {
+        display: none;
+    }
+    /* PA Form owner คำถามสุขภาพ */
+    .pd-top {
+        padding-top: 8px;
+    }
+    // ผุ้เอาประกัน
+    #hide-filed1 {
+        display: none;
+    }
+
+    #hide-filed3 {
+        display: none;
+    }
+
+    #hide-filed4 {
+        display: none;
+    }
+
+    #hide-filed5 {
+        display: none;
+    }
+    // คู่สมรส
+    #hide-filed1_2 {
+        display: none;
+    }
+
+    #hide-filed3_2 {
+        display: none;
+    }
+
+    #hide-filed4_2 {
+        display: none;
+    }
+
+    #hide-filed5_2 {
+        display: none;
+    }
+    // บุตรคนที่ 1
+    #hide-filed1_3 {
+        display: none;
+    }
+
+    #hide-filed3_3 {
+        display: none;
+    }
+
+    #hide-filed4_3 {
+        display: none;
+    }
+
+    #hide-filed5_3 {
+        display: none;
+    }
+    // บุตรคนที่ 2
+    #hide-filed1_4 {
+        display: none;
+    }
+
+    #hide-filed3_4 {
+        display: none;
+    }
+
+    #hide-filed4_4 {
+        display: none;
+    }
+
+    #hide-filed5_4 {
+        display: none;
+    }
+    /*-----------------------------------------  /PA  -------------------------------------------------*/
+    /*-----------------------------------------  FIRE  -------------------------------------------------*/
+    /* FIRE Form plant หน้าแรก */
+    #IsHouse {
+        background-image: url('../../../../Images/icon/icon-house.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #IsHouse.active {
+        background-position: center bottom;
+    }
+
+    #IsRent {
+        background-image: url('../../../../Images/icon/icon-rent.png');
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        vertical-align: middle;
+    }
+
+    #IsRent.active {
+        background-position: center bottom;
+    }
+
+
+    #roomFloor {
+        display: none;
+    }
+
+    #spaceBuildOther {
+        display: none;
+    }
+
+    #Commercial {
+        display: none;
+    }
+
+    #onlyBuilding {
+        display: none;
+    }
+
+    #totalBuilding {
+        display: none;
+    }
+
+    #Type_allBuilding {
+        display: none;
+        margin-top: 20px;
+    }
+
+    #Type_onlyBuilding {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .total-insurance {
+        display: none;
+    }
+
+    .type-building {
+        position: relative;
+        //margin: 0 0 30px;
+        margin: 0 0 0px;
+
+        input[type=radio] + label.type-build {
+            background: url("../../images/icon/icon-check-bgwhite.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+            background-position: 0 40%;
+        }
+
+        input[type=radio]:checked + label.type-build {
+            background: url("../../images/icon/icon-checked.png") no-repeat;
+            display: inline-block;
+            padding: 0 0 0 0px;
+            vertical-align: middle;
+            cursor: pointer;
+            background-position: 0 40%;
+        }
+
+        .box-type-building {
+            border: 1px solid #bebebe;
+            background-color: #666666;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+
+            .icon {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .icon-allbuild {
+                background-image: url(../../Images/icon/icon-allBuilding.png);
+                width: 85px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+
+                @media (max-width: 767px) {
+                    background-image: url(../../Images/icon/icon-allBuilding2x.png);
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            .icon-onlybuild {
+                background-image: url(../../Images/icon/icon-onlyBuilding.png);
+                width: 85px;
+                height: 85px;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+
+                @media (max-width: 767px) {
+                    background-image: url(../../Images/icon/icon-onlyBuilding2x.png);
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            .content-rdo-inline {
+                vertical-align: middle;
+                color: #fff;
+                width: 240px;
+
+                @media (max-width: 1199px) {
+                    width: 150px;
+                }
+
+                @media (max-width: 768px) {
+                    width: auto;
+                }
+
+                @media (max-width: 550px) {
+                    width: 250px;
+                }
+
+                @media (max-width: 435px) {
+                    width: 220px;
+                }
+
+                @media (max-width: 410px) {
+                    width: 200px;
+                }
+
+                @media (max-width: 385px) {
+                    width: 200px;
+                }
+
+                @media (max-width: 370px) {
+                    width: 170px;
+                }
+
+                @media (max-width: 341px) {
+                    width: 140px;
+                }
+
+                .br {
+                    @media (max-width: 410px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .active {
+            border: 1px solid #1595d3;
+            background-color: #1595d3;
+
+            .icon-allbuild {
+                background-position: top center;
+            }
+
+            .icon-onlybuild {
+                background-position: top center;
+            }
+
+            .content-rdo-inline {
+                color: #fff;
+            }
+        }
+    }
+    /* FIRE Form plant เบี้ยประกันภัยรวม */
+    .result-box-fire {
+        //text-align: right;
+        text-align: left;
+        .total-price {
+            text-align: left;
+            font-family: $font-main;
+            margin: 15px 0 25px;
+
+            @media (max-width: 480px) {
+                margin: 0 0 25px;
+            }
+
+            .txt-total-price {
+                display: inline-block;
+                font-size: 26px;
+                color: $font-color-title;
+                //margin-right: 95px;
+                float: left;
+                line-height: 50px;
+
+                @media only screen and (max-width: 1199px) {
+                    margin-right: 35px;
+                }
+                @media only screen and (max-width: 480px) {
+                    display: block;
+                }
+            }
+
+            .sum-total-price{
+                float: right;
+            }
+            .sum-total-price, .sum-total-priceInsure {
+                display: inline-block;
+                background-color: $bg-primary;
+                padding: 0px 10px;
+                color: #fff;
+                font-size: 36px;
+                width: 253px;
+
+                .txt-currency {
+                    font-size: 22px;
+                    font-weight: normal;
+                }
+                @media only screen and (max-width: 1199px) {
+                    width: 223px;
+                }
+                @media only screen and (max-width: 480px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /* FIRE Form owner ผู้รับผลประโยชน์ */
+    .content-rdo-textlong {
+        width: 80%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    /*.warning-widthover-filed{
+        position: relative;
+        //top: 2px;
+        width: 180px;
+    }*/
+    #outStanding {
+        display: none;
+    }
+    // กรณีมีภาระสินเชื่อ
+    #financial {
+        display: none;
+    }
+
+    #No_financial {
+        display: none;
+    }
+
+    #ddl_prefixY2 {
+        display: none;
+    }
+
+    #text_otherBank1 {
+        display: none;
+    }
+
+    #ddl_prefixN2_1, #ddl_prefixN2_2 {
+        display: none;
+    }
+    /* FIRE Form owner ปัจจุบันท่านมีกรมธรรม์อัคคีภัยหรือไม่ */
+    #fund_Muangthai, #name_Other, #fund_Other {
+        display: none;
+    }
+
+    #presentInsure {
+        display: none;
+    }
+
+    #btnOut {
+        display: none;
+    }
+    /*-----------------------------------------  /FIRE  -------------------------------------------------*/
+}
+    /* ปิด /formdetail */
+    /*-----------------------------------------  /TA PA  -------------------------------------------------*/
+    /*-----------------------------------------  Cancer  -------------------------------------------------*/
+
+    .QuestionCancer{
+        padding-left: 35px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 767px) {
+        }
+    }
+    //Form Plant หน้าแรก
+    // วงเงินคุ้มครอง
+    #cancerCoverage {
+        display: none;
+    }
+    //Form Owner คำถาม
+    #for_Male {
+        display: block;
+    }
+
+    #for_Female {
+        display: none;
+    }
+    //2
+    #for_Cigarette {
+        display: none;
+    }
+    //3.2
+    #for_Tumor {
+        display: none;
+    }
+
+    #detailSubtopic3_2-3 {
+        display: none;
+    }
+    //3.3
+    #for_Seed {
+        display: none;
+    }
+
+    #show_ddlFollowdoctor {
+        display: none;
+    }
+    //4
+    #for_haveInsurance {
+        display: none;
+    }
+    /*-----------------------------------------  /Cancer  -------------------------------------------------*/
+
+
+
+
+    //เบี้ยประกันภัย
+    .box-package {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                //float: left;
+                //width: 150px;
+                display: block;
+                width: 48%;
+                margin-right: 5px;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @media (max-width: 999px) {
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+
+                @media (max-width: 767px) {
+                    float: left;
+                    width: 49%;
+                }
+
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+
+                .item-package {
+                    border: 1px solid #bebebe;
+
+                    .header {
+                        position: relative;
+                        padding: 5px 10px;
+                        background-color: #666666;
+
+                        label {
+                            margin-bottom: 0;
+                            height: 25px;
+                        }
+
+                        .content-rdo-inline {
+                            color: #fff;
+
+                            &.-pa {
+                                font-size: 20px;
+                                line-height: 20px;
+
+                                .txt-money {
+                                    //font-weight: normal;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+
+                        .txt-currency-header {
+                            font-weight: normal;
+                            font-family: $font-main;
+                            font-size: 20px;
+                            color: #fff;
+                            /*position: absolute;
+                            right: 10px;
+                            top: 22px;*/
+                        }
+                    }
+
+                    .detail {
+                        cursor: pointer;
+                        position: relative;
+                        font-family: $font-main;
+                        font-size: 32px;
+                        text-align: center;
+                        padding: 10px 0;
+                        color: #666;
+
+                        label.txt-price {
+                            font-weight: normal;
+                            /*position: absolute;
+                            left: 10px;
+                            top: 20px;*/
+                            color: #666;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+
+                        label.currency {
+                            font-weight: normal;
+                            /*position: absolute;
+                            right: 10px;
+                            top: 20px;*/
+                            color: #666;
+                            //font-size: 20px;
+                            font-size: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            li.active {
+                .item-package {
+                    border: 1px solid #1595d3;
+
+                    .header {
+                        background-color: #1595d3;
+                    }
+
+                    .detail {
+                        color: #1595d3;
+                    }
+                }
+            }
+        }
+    }
+    .packageInsured{
+        background-color: #666666;
+        padding: 10px;
+        cursor: pointer;
+        .item-package{
+            .header{
+                font-family: $font-main;
+                font-size: 26px;
+                line-height: 17px;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+            .header.pa{
+                font-size: 21px;
+            }
+            .detail-wrapper{
+                .icon-check{
+                    float: left;
+                    background-image: url('../../../../Images/icon/icon-check-bgwhite.png');
+                    width: 25px;
+                    height: 25px;
+                    background-repeat: no-repeat;
+                }
+                .price{
+                    float: right;
+                    text-align: right;
+                    .money{
+                        .main-price{
+                            font-family: $font-main;
+                            font-size: 50px;
+                            line-height: 10px;
+                            color: #ffffff;
+                            @media only screen and (max-width: 1199px) {
+                                font-size: 36px;
+                            }
+                            @media only screen and (max-width: 767px) {
+                                font-size: 50px;
+                            }
+                        }
+                        .point{
+                            font-family: $font-main;
+                            font-size: 20px;
+                            line-height: 10px;
+                            color: #ffffff;
+                        }
+                    }
+                    .current{
+                        font-family: $font-main;
+                        font-size: 20px;
+                        line-height: 10px;
+                        color: #ffffff;
+                    }
+                }
+            }
+            
+        }
+        &:hover{
+            background-color: $color-blue;
+        }
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .packageInsured.active{
+        background-color: $color-blue;
+        .item-package{
+            .detail-wrapper{
+                .icon-check{
+                    float: left;
+                    background-image: url('../../../../Images/icon/icon-checked.png');
+                    width: 25px;
+                    height: 25px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+

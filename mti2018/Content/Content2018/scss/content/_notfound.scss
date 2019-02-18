@@ -1,0 +1,93 @@
+﻿.main-content-notfound{
+    width: 100%;
+	//margin-top:-250px;
+	position: relative;
+	z-index: 9;
+    @media (min-width: 1200px) {
+		margin-top:-200px;
+	}
+    @media (min-width: 1000px) and (max-width: 1199px) {
+		margin-top:-150px;
+	}
+	@media (max-width: 999px) {
+		margin-top: 0;
+	}
+    .float-r{
+        float: right;
+    }
+    .float-l{
+        //float: left;
+    }
+    .div-notfound{
+        background-color: #ffffff;
+		width: 100%;
+		padding:0px 10px 0;
+		margin-bottom: 150px;
+        position: relative;
+        .img{
+            text-align: center;
+            img{
+                width: auto;
+                @media (max-width: 999px) {
+                    width: 60%;
+                    display: block;
+                    margin: auto;
+                    display: none;
+                }
+                    
+            }
+        }
+        .content-404{
+            padding-top: 60px;
+            padding-left: 90px;      
+            @media (max-width: 999px) {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }  
+            .list-box{
+                font-family: $font-main;
+                margin-bottom: 60px;
+                .title-404{
+                    font-size: 38px;
+                    color:  #1595d3;
+                    margin-bottom: 15px;
+                    line-height: 38px;
+                    .icon-404{
+                        position: relative;
+                        top: -6px;
+                    }
+                }
+                .desc-404{
+                    font-size: 28px;
+                    color: #666;
+                    line-height: 28px;
+                    span{
+                        a{
+                            color: #1595d3;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .image-404plug{
+            position: absolute;
+            background-image: url('../../../Images/image-404plug.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 142px;
+            width: 65%;
+            bottom: 15px;
+            left: 0;
+            @media (max-width: 999px) {
+                position: relative;
+                margin: auto;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,355 @@
+﻿// Lightbox แบบสำรวจ
+.content-poll {
+    padding: 10px;
+
+    .fancybox-close {
+        top: 15px;
+        right: 28px;
+    }
+
+    .txt-title-checkout {
+        span {
+            font-size: 35px;
+        }
+    }
+
+    .banner-poll {
+        margin: 0 0 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .list-score-poll {
+        margin-top: 55px;
+        padding: 0 10px;
+
+        @media (max-width: 480px) {
+            margin-top: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                float: left;
+                font-family: $font-main;
+                font-size: $font-medium;
+                color: #666666;
+                //padding: 0 30px;
+                text-align: center;
+                position: relative;
+                height: 15px;
+                cursor: pointer;
+                width: 14.2555%;
+
+                @media (max-width: 480px) {
+                    float: none;
+                    display: block;
+                    width: auto;
+                    height: 65px;
+                    margin-bottom: 10px;
+                    color: #154d7f;
+                    font-size: 30px;
+                }
+
+                .txt {
+                    position: relative;
+                    top: -50px;
+                    line-height: 20px;
+
+                    @media (max-width: 480px) {
+                        top: 0;
+                        line-height: 65px;
+                    }
+                }
+
+                .icon-poll {
+                    background-image: url('/Images/icon/icon-select-poll.png');
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    display: none;
+                }
+            }
+
+            li.active {
+                .icon-poll {
+                    background-image: url('/Images/icon/icon-select-poll.png');
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    display: block;
+                    width: 44px;
+                    height: 45px;
+                    top: -15px;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+
+                    @media (max-width: 480px) {
+                        top: 13px;
+                        left: 15px;
+                        right: auto;
+                    }
+                }
+            }
+
+            .one {
+                background-color: #0677c3;
+            }
+
+            .two {
+                background-color: #2198e8;
+            }
+
+            .three {
+                background-color: #50b8ff;
+            }
+
+            .four {
+                background-color: #86cefe;
+            }
+
+            .five {
+                background-color: #b6e2fd;
+            }
+
+            .six {
+                background-color: #dbedfb;
+            }
+
+            .seven {
+                background-color: #f0f8fb;
+            }
+        }
+    }
+
+    .content {
+        margin-top: 30px;
+        font-family: $font-main;
+        font-size: $font-small;
+        color: #666666;
+
+        span {
+            color: #1595d3;
+        }
+
+        .text{
+            color: #ffffff;
+        }
+    }
+}
+.thankyou{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #1595d3;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    //z-index:999;
+    padding-top: 190px;
+    @media (max-width: 750px) {
+         padding-top: 100px;
+     }
+     @media (max-width: 480px) {
+         padding-top: 220px;
+     }
+    .txt-Thankyou-header{
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: $font-submain;
+        font-size: 70px;
+        line-height: 30px;
+        color: #fff;
+        span{
+            font-size: 30px;
+        }
+    }
+    .txt-Thankyou-footer{
+        font-family: $font-submain;
+        font-size: 30px;
+        color: #fff;
+        margin-top: 15px;
+    }
+}
+
+
+// Content ในหน้าสรุป
+
+.txt-title-checkout {
+    font-family: $font-main;
+    font-size: 35px;
+    line-height: 35px;
+    color: $color-blue;
+    margin-bottom: 20px;
+}
+
+.status-wrapper {
+    margin-bottom: 20px;
+    .section-status {
+        margin-bottom: 20px;
+        float: left;
+        .txt-title-head {
+            margin-bottom: 0;
+
+            span {
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .txt-detail {
+            font-family: $font-main;
+            font-size: $font-medium;
+            color: #666666;
+            line-height: 22px;
+        }
+
+        .icon {
+            float: left;
+            width: 20px;
+            height: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text {
+            font-family: $font-main;
+            font-size: 26px;
+            color: #666666;
+            line-height: 26px;
+            padding-left: 35px;
+
+            .text-green {
+                color: #9fc62a;
+            }
+
+            .text-red {
+                color: #ff4000;
+            }
+        }
+    }
+
+    .pay-again {
+        float: right;
+        .btn{
+            margin: 0;
+             @media only screen and (max-width: 480px) {
+                 width: 200px;
+             }
+        }
+    }
+}
+
+
+
+.section-table {
+    table {
+        thead {
+            tr {
+                td {
+                    font-family: $font-main;
+                    font-size: $font-medium;
+                    background-color: #1595d3;
+                    text-align: center;
+                    color: #fff;
+                    border: 1px solid #1595d3;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: #F0F0F0;
+                }
+
+                &:nth-child(odd) {
+                    background: #FFF;
+                }
+
+                td {
+                    font-family: $font-main;
+                    font-size: $font-small;
+                    color: #666666;
+                    padding: 8px 15px;
+                    border: 1px solid #d7d7d7;
+                    line-height: 22px;
+                }
+
+                td.txt-color-green {
+                    color: #9fc62a;
+                }
+                td.txt-color-red {
+                    color: #ff4000;
+                }
+            }
+
+            tr.bg-color-blue {
+                background-color: #1595d3;
+
+                td {
+                    color: #fff;
+                    vertical-align: middle;
+                    border: 1px solid #1595d3;
+                }
+
+                td.title {
+                    font-family: $font-main;
+                    font-size: $font-big;
+                    line-height: 26px;
+                }
+
+                td.price {
+                    font-family: $font-main;
+                    font-size: $font-biggest;
+                    line-height: 26px;
+
+                    label {
+                        font-size: $font-big;
+                        font-weight: normal;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#show_Person{
+    .title{
+        font-family: $font-main;
+        font-size: 26px;
+        line-height: 26px;
+        color: $color-blue;
+    }
+
+    .content-rdo-inline{
+        font-size: 23px;
+        line-height: 25px;
+    }
+}
+
+
+.modal {
+    .modal-dialog {
+        .close {
+            opacity: 1;
+            position: relative;
+            top: 15px;
+            right: 15px;
+            z-index: 99;
+        }
+    }
+}

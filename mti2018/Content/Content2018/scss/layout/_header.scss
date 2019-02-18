@@ -1,0 +1,430 @@
+// Menu Canvas
+body.nav-expanded {
+    transition: right 0.5s ease;
+    -webkit-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+}
+.nav-expanded{
+    .canvas-menu-wrapper{
+        .canvas-menu{
+		    right: 0;
+	    }
+    }
+	
+}
+.canvas-menu-wrapper{
+	display: none;
+    @media (max-width: 1024px) {
+        display: block;
+    }
+    .canvas-menu{
+        display: block;
+        background-image: url('../../../Images/bg-menuOn_MB.png');
+        height: 100%;
+        width: 280px;
+        overflow: auto;
+        position: fixed;
+        right: -280px;
+        top: 0;
+        z-index: 3000;
+        transition: right 0.5s ease;
+		-webkit-transition: right 0.5s ease;
+		-moz-transition: right 0.5s ease;
+		-o-transition: right 0.5s ease;
+        .canvas-header{
+            padding: 10px 15px;
+            .close-menu{
+                float: right;
+                font-family: $font-main;
+                font-size: 25px;
+                line-height: 25px;
+                color: #ACBFD3;
+                cursor: pointer;
+                i{
+                    font-size: 15px;
+                }
+            }
+        }
+        .logo-frendsClub{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .canvas-title{
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .title-MB{
+                font-family: $font-main;
+                font-size: 40px;
+                line-height: 40px;
+                color: #ffffff;
+            }
+            .desc-MB{
+                font-family: $font-main;
+                font-size: 22px;
+                line-height: 22px;
+                color: #ffffff;
+            }
+        }
+        .canvas-listmenu{
+            margin-top: 15px;
+            .nav-menu-MB{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    display: block;
+                    padding: 10px 15px;
+                    a{
+                        .text{
+                            float: left;
+                            font-family: $font-main;
+                            font-size: 25px;
+                            line-height: 25px;
+                            color: #ffffff;
+                        }
+                        .icon{
+                            float: right;
+                            &:after{
+                                content: '\f107';
+                                font-family: FontAwesome;
+                                font-size: 20px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+
+                    .menu-MB-lv2{
+                        margin: 0 -15px;
+                        padding: 0;
+                        background-color: #F3F3F3;
+                        li{
+                            border-bottom: 1px solid #ffffff;
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                            a{
+                                .text{
+                                    float: left;
+                                    font-family: $font-main;
+                                    font-size: 23px;
+                                    line-height: 23px;
+                                    color: $color-gray;
+                                }
+                                .icon{
+                                    float: right;
+                                    &:after{
+                                        content: '\f107';
+                                        font-family: FontAwesome;
+                                        font-size: 20px;
+                                        color: $color-gray;
+                                    }
+                                }
+                            }
+                            .menu-MB-lv3{
+                                margin: 0 -15px;
+                                padding: 0;
+                                li{
+                                    padding-left: 35px;
+                                    a{
+                                        font-family: $font-main;
+                                        font-size: 21px;
+                                        line-height: 21px;
+                                        color: $color-gray;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                        li.open{
+                            a{
+                                .icon{
+                                    &:after{
+                                        content: '\f106';
+                                        font-family: FontAwesome;
+                                        font-size: 20px;
+                                        color: $color-gray;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                li.open{
+                    a{
+                        .icon{
+                            &:after{
+                                content: '\f106';
+                                font-family: FontAwesome;
+                                font-size: 20px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .navbar-canvas{
+        //position: fixed;
+        position:absolute;
+        width: 100%;
+        margin-bottom: 0;
+        z-index: 1050;
+        .menuCanvas-left{
+            padding-top: 10px;
+            float: left;
+            .login-OnMB{
+                float: left;
+                .navbar-brand{
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+            .menu-OnMB{
+                float: left;
+                margin-left: 5px;
+                background-color: #15497A;
+                padding: 7px 10px;
+                text-align: center;
+                cursor: pointer;
+                .hamberger{
+                    display: block;
+                    width: 29px;
+                    height: 14px;
+                    margin-bottom: 10px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text{
+                    display: block;
+                    font-family: $font-main;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #A1B6CA;
+                }
+            }
+        }
+        .menuCanvas-right{
+            float: right;
+            padding-top: 10px;
+            padding-right: 10px;
+            .lang{
+                float: left;
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin-left: 50px;
+                padding-top: 3px;
+                a{
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    border: 1px solid #ffffff;
+                    font-family: $font-main;
+                    font-size: 25px;
+                    line-height: 38px;
+                    color: #ffffff;
+                }
+            }
+            .menu-OnMB{
+                float: left;
+                margin-left: 5px;
+                background-color: #15497A;
+                padding: 7px 10px;
+                text-align: center;
+                cursor: pointer;
+                .hamberger{
+                    display: block;
+                    width: 29px;
+                    height: 14px;
+                    margin-bottom: 10px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text{
+                    display: block;
+                    font-family: $font-main;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #A1B6CA;
+                }
+            }
+        }
+    }
+}
+
+
+// Desktop
+.main-wrapper{
+	max-width: 1440px;
+	width: 100%;
+	margin: auto;
+	background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+	/*background: #E0E0E0;  //For browsers that do not support gradients 
+    background: -webkit-linear-gradient(#fff, #E0E0E0);  //For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(#fff, #E0E0E0);  //For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(#fff, #E0E0E0);  //For Firefox 3.6 to 15 
+    background: linear-gradient(#fff, #E0E0E0);  //Standard syntax*/ 
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    z-index: 1030;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.header-left{
+    float: left;
+    width: 99px;
+    height: 119px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-right{
+    float: right;
+    .menu-wrapper{
+        float: left;
+        padding-top: 10px;
+        .lv1{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                float: left;
+                padding-bottom: 5px;
+                margin-left: 50px;
+                position: relative;
+                a{
+                    font-family: $font-main;
+                    font-size: 25px;
+                    line-height: 25px;
+                    color: #ffffff;
+                    padding: 5px 15px;
+                }
+                .sub-menu{
+                    position: absolute;
+                    display: none;
+                    //background-color: #ffffff;
+                    background-color: rgba(12, 83, 127, 0.8);
+                    min-width: 220px;
+                    padding: 10px 15px;
+                    z-index: 1500;
+                    top: 32px;
+                    li{
+                        margin-left: 0;
+                        display: block;
+                        width: 100%;
+                        a{
+                            padding: 0;
+                            .icon{
+                                float: left;
+                                i{
+                                    font-size: 18px;
+                                    //color: #666666;
+                                    color: #ffffff;
+                                }
+                            }
+                            .text{
+                                padding-left: 15px;
+                                //color: #666666;
+                                color: #ffffff;
+                                font-size: 22px;
+                            }
+                            &:hover{
+                                .icon{
+                                    i{
+                                        //color: $color-blue;
+                                    }
+                                }
+                                .text{
+                                    //color: $color-blue;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                @media only screen and (max-width: 1199px) {
+                    margin-left: 25px;
+                    a{
+                        font-size: 23px;
+                        line-height: 23px;
+                    }
+                }
+                
+            }
+            li.active{
+                a{
+                    //background-color: #ffffff;
+                    //color: $color-blue;
+                    //background-color: rgba(102, 102, 102, 0.3);
+                    background-color: rgba(12, 83, 127, 0.8);
+                    color: #ffffff;
+                    
+                }
+                .sub-menu{
+                    li{
+                        border-bottom: none;
+                    }
+                }
+            }
+            li.active-page{
+                border-bottom: 3px solid #ff0c01;
+            }
+        }
+    }
+    .logo-frendsClub{
+        float: left;
+        margin-left: 40px;
+    }
+    .lang{
+        float: left;
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-left: 20px;
+        padding-top: 3px;
+        a{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: block;
+            border: 1px solid #ffffff;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 38px;
+            color: #ffffff;
+        }
+    }
+}

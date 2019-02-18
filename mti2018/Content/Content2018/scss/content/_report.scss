@@ -1,0 +1,681 @@
+﻿
+.order-head-report {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .title {
+                font-family: $font-main;
+                font-size: 26px;
+                line-height: 26px;
+                color: $color-blue;
+                padding-right: 15px;
+                @media only screen and (max-width: 375px) {
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                @media only screen and (max-width: 360px) {
+                    display: block;
+                }
+            }
+
+            .detail {
+                font-family: $font-main;
+                font-size: 26px;
+                line-height: 26px;
+                color: $color-gray;
+                a{
+                    color: $color-gray;
+                }
+                .group-icon-text{
+                    margin-right: 10px;
+                    .icon{
+                        margin-right: 5px;
+                    }
+                    .text{
+                        font-family: $font-main;
+                        position: relative;
+                        top: 5px;
+                        .num{
+                            font-size: 40px;
+                            line-height: 23px;
+                            color: $color-blue;
+                            margin-right: 5px;
+                        }
+                        .unit{
+                            font-size: 23px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+
+            .price {
+                width: auto;
+                .text-price {
+                    .price {
+                        font-family: $font-main;
+                        font-size: 46px;
+                        line-height: 26px;
+                        color: $color-gray;
+                        /*float: left;*/
+                    }
+
+                    .point {
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 26px;
+                        color: $color-gray;
+                        /*float: left;*/
+                        position: relative;
+                        /*top: 5px;*/
+                    }
+
+                    .current {
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 26px;
+                        color: $color-gray;
+                        /*float: left;*/
+                        position: relative;
+                        /*top: 5px;*/
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.report-deatil-price{
+    margin-bottom: 30px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            border-bottom: 1px solid #bebebe;
+            padding: 15px 10px;
+            margin: 0 -10px;
+            &:first-child{
+                padding-top: 0;
+            }
+            .price-main{
+                .title{
+                    font-family: $font-main;
+                    font-size: 26px;
+                    line-height: 26px;
+                    color: $color-blue;
+                    float: left;
+                }
+                .price{
+                    float: right;
+                    .main-price{
+                        font-family: $font-main;
+                        font-size: 46px;
+                        line-height: 26px;
+                        color: #666666;
+                        float: left;
+                    }
+                    .point-price{
+                        font-family: $font-main;
+                        font-size: 24px;
+                        line-height: 24px;
+                        color: #666666;
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                    }
+                    .current {
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 26px;
+                        color: $color-gray;
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .price-more{
+                float: right;
+                margin-top: 15px;
+                max-width: 300px;
+                width: 100%;
+                .list{
+                    display: block;
+                    margin: 15px 0;
+                    .title{
+                        font-family: $font-main;
+                        font-size: 23px;
+                        line-height: 23px;
+                        color: #666666;
+                        float: left;
+                    }
+                    .price{
+                        font-family: $font-main;
+                        font-size: 26px;
+                        line-height: 26px;
+                        color: #666666;
+                        float: right;
+                    }
+                    .icon{
+                        float: right;
+                        width: 25px;
+                        height: 25px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .total-price{
+        //float: right;
+        margin-top: 25px;
+        .text{
+            font-family: $font-main;
+            font-size: 26px;
+            line-height: 56px;
+            color: #1595d3;
+            //display: inline-block;
+            //vertical-align: baseline;
+            float: left;
+        }
+        .price{
+            float: right;
+            //display: inline-block;
+            //vertical-align: baseline;
+            margin-left: 15px;
+            background-color: $color-blue;
+            padding: 15px;
+
+            .main-price{
+                font-family: $font-main;
+                font-size: 46px;
+                line-height: 26px;
+                float: left;
+                color: #ffffff;
+            }
+            .point-price{
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 23px;
+                color: #ffffff;
+                float: left;
+                position: relative;
+                top: 5px;
+            }
+            .current{
+                font-family: $font-main;
+                font-size: 23px;
+                line-height: 23px;
+                color: #ffffff;
+                float: left;
+                position: relative;
+                top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.report-deatil-price.type2{
+    //margin-top: 30px;
+    ul{
+        li{
+            &:first-child{
+                padding-top: 0;
+                padding-bottom: 25px;
+            }
+            &:last-child{
+                //border-bottom: none;
+            }
+        }
+    }
+}
+
+.tab-report{
+    .tab_all{
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+.tab-report.-motor{
+    margin-top: 50px;
+    padding: 0;
+    li{
+        text-align: center;
+        position: relative;
+        margin-right: 2px;
+        height: 42px;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $color-gray;
+            &:hover{
+                background-color: $color-blue;
+            }
+        }
+        @media only screen and (max-width: 550px) {
+            width: 50%;
+            margin-top: 0;
+            margin-bottom: 2px;
+            margin-right: 0;
+            text-align: left;
+            a{
+                width: auto;
+                padding: 10px 8px;
+            }
+        }
+        &:first-child{
+            @media only screen and (max-width: 550px){
+                width: 100%;
+            }
+            
+        }
+    }
+}
+.tab-report.-ta{
+    margin-top: 50px;
+    padding: 0;
+    li{
+        text-align: center;
+        position: relative;
+        margin-right: 2px;
+        height: 42px;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $color-gray;
+            &:hover{
+                background-color: $color-blue;
+            }
+        }
+        @media only screen and (max-width: 550px) {
+            width: 50%;
+            margin-top: 0;
+            margin-bottom: 2px;
+            margin-right: 0;
+            text-align: left;
+            a{
+                width: auto;
+                padding: 10px 8px;
+            }
+        }
+        &:first-child{
+            @media only screen and (max-width: 550px){
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+.tab-report.tab-pa{
+    margin-top: 50px;
+    padding: 0;
+    li{
+        text-align: center;
+        position: relative;
+        margin-right: 2px;
+        height: 42px;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $color-gray;
+            &:hover{
+                background-color: $color-blue;
+            }
+        }
+        @media only screen and (max-width: 550px) {
+            width: 50%;
+            margin-top: 0;
+            margin-bottom: 2px;
+            margin-right: 0;
+            text-align: left;
+            a{
+                width: auto;
+                padding: 10px 8px;
+            }
+        }
+    }
+}
+
+
+
+
+.detail-report-collapse{
+    padding-bottom: 0;
+    position: relative;
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+
+    .edit-detail{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        cursor: pointer;
+        i{
+            color: #ffffff;
+            font-size: 18px;
+        }
+    }
+    .edit-name{
+        .line-colMB-in-title{
+            margin-bottom: 5px;
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    //motor
+    #save_owner{
+        display: none;
+    }
+    #save_driver1{
+        display: none;
+    }
+    #save_driver2{
+        display: none;
+    }
+    #saveall_owner, #saveall_driver1, #saveall_driver2, #save_detailinsurance{
+        display: none;
+    }
+    //ta
+    #save_owner1, #save_owner2, #save_owner3, #save_owner4, #save_owner5{
+        display: none;
+    }
+    #saveall_owner1, #saveall_owner2, #saveall_owner3, #saveall_owner4, #saveall_owner5{
+        display: none;
+    }
+    #save_detailinsurance1, #save_detailinsurance2, #save_detailinsurance3, #save_detailinsurance4, #save_detailinsurance5{
+        display: none;
+    }
+    #saveall_detailinsurance1, #saveall_detailinsurance2, #saveall_detailinsurance3, #saveall_detailinsurance4, #saveall_detailinsurance5{
+        display: none;
+    }
+
+    .title-collapse{
+        margin: 0 0 20px; 
+        background-color: #1595d3;
+        padding: 7px 10px;
+        .txt{
+            float: left;
+            font-family: $font-main;
+            font-size: 24px;
+            color: #fff;
+            line-height: 24px;
+        }
+        .icon{
+                float: right;
+                font-size: 20px;
+                color: #fff;
+                line-height: 20px;
+                transform: scale(2,1.5);
+                position: relative;
+                right: 7px;
+        }
+    }
+
+    .detail-insurance{
+        .row{
+            .list-detail{
+                //margin: 0 0 5px;
+                margin-bottom: 5px;
+                //height: 40px;
+            }
+        }
+        .title{
+            font-family: $font-main;
+            font-size: 24px;
+            line-height: 40px;
+            color: $color-blue;
+        }
+        .desc{
+            font-family: $font-main;
+            font-size: 24px;
+            line-height: 24px;
+            color: $color-gray;
+            a{
+                color: $color-gray;
+                text-decoration: none;
+            }
+        }
+        .desc.typetext{
+            line-height: 38px;
+        }
+        .desc.typetext-idcard, .desc.typetext-name, .desc.typetext-calendar, .desc.typetext-age, .desc.typetext-ddl, .desc.typetext-height, 
+        .desc.typetext-weight, .desc.typetext-phone, .desc.typetext-email, .desc.typetext-carnumber, .desc.typetext-chassisnumber, .desc.typetext-typebuild{
+            line-height: 38px;
+        }
+        .desc.typetext-noedit{
+            line-height: 38px;
+        }
+        @media only screen and (max-width: 767px) {
+            .row{
+                .list-detail{
+                    height: auto;
+                    margin-bottom: 10px;
+                    .edit-address{
+                        margin-top: 10px;
+                    }
+                    .line-rowInput{
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+                }
+            }
+            .title{
+                line-height: 24px;
+            }
+            .desc.typetext{
+                line-height: 38px;
+            }
+        }
+    }
+}
+.type-package-standard-report{
+    width: 100%;
+    background-color: $color-blue;
+    padding: 7px 10px;
+    font-family: $font-main;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+// ไม่ได้ใช้
+.type_reciveinsurance{
+    //margin-bottom: 30px;
+    .title{
+        font-family: $font-main;
+        font-size: 30px;
+        line-height: 30px;
+        color: $color-blue;
+        margin-bottom: 15px;
+    }
+}
+
+
+// Tab responsive Dropdown
+#tabs_content{
+    display: block;
+    /*@media only screen and (max-width: 999px) {
+        display: none;
+    }*/
+}
+.dropdown-content{
+    display: none;
+    font-family: $font-main;
+    cursor: pointer;
+    @media only screen and (max-width: 999px) {
+        //display: block;
+        width: 100%;
+        max-width: 300px;
+        //margin: auto;
+        margin-bottom: 20px;
+    }
+    .btn-ddl{
+        position: relative;
+        font-size: 23px;
+        line-height: 30px;
+        padding: 5px 10px;
+        border: 1px solid #dddddd;
+        background-color: #ffffff;
+        &:active{
+            padding: 5px 10px;
+        }
+        &:hover{
+            border: 1px solid #dddddd;
+        }
+        .text{
+            color: $color-blue;
+            padding-right: 30px;
+            padding-left: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 275px;
+        }
+        .caret{
+            border: none;
+            background-image: url('../../../../Images/icon/p_dropdown_black.png');
+            width: 26px;
+            height: 11px;
+            position: absolute;
+            top: 15px;
+            right: 8px;
+        }
+    }
+    .dropdown-menu{
+        float: left;
+        background-color: #F8F8F8;
+        color: $color-gray;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        li{
+            cursor: pointer;
+            a{
+                font-size: 21px;
+                line-height: 21px;
+                white-space: normal;
+                padding: 10px;
+                color: $color-gray;
+                &:hover{
+                    background-color: #d0d0d0;
+                }
+            }
+        }
+    }
+}
+
+
+.section-recive-insurance{
+    margin-top: 30px;
+    position: relative;
+    .title{
+        font-family: $font-main;
+        font-size: 26px;
+        line-height: 26px;
+        color: $color-blue;
+        margin-bottom: 15px;
+    }
+    input[type=checkbox] + label.type-recive{
+	    background: url("../../images/icon/icon-checkbox-check.png") no-repeat;
+        height: auto;
+        width: auto;
+	    display:inline-block;
+	    padding: 0 0 0 0px;
+	    vertical-align: middle;
+        cursor: pointer;
+        background-position: 0 40%;
+    }
+    input[type=checkbox]:checked + label.type-recive{
+	    background: url("../../images/icon/icon-checkbox-checked.png") no-repeat;
+	    display:inline-block;
+	    padding: 0 0 0 0px;
+	    vertical-align: middle;
+        cursor: pointer;
+        background-position: 0 40%;
+    }
+    .item-type-recive{
+        background-color: #666666;
+        border: 1px solid #bebebe;
+        margin: 10px 0;
+        padding: 5px 10px;
+        .icon{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon-postoffice{
+            background-image:url(../../Images/icon/icon-postoffice.png);
+            width: 85px;
+            height: 85px;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .icon-epolicy{
+            background-image:url(../../Images/icon/icon-epolicy.png);
+            width: 85px;
+            height: 85px;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .content-rdo-inline{
+            vertical-align: middle;
+            color: #ffffff;
+            width: 200px;
+            @media only screen and (max-width: 1199px) {
+                width: auto;
+            }
+            @media only screen and (max-width: 767px) {
+                width: auto;
+            }
+            @media only screen and (max-width: 550px) {
+                width: 200px;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 180px;
+            }
+            @media only screen and (max-width: 360px) {
+                width: 160px;
+            }
+            @media only screen and (max-width: 320px) {
+                width: 130px;
+            }
+        }
+    }
+    .active{
+        border: 1px solid $color-blue;
+        background-color: $color-blue;
+        .icon-postoffice{
+            background-position: top center;
+        }
+        .icon-epolicy{
+            background-position: top center;
+        }
+        .content-rdo-inline{
+            color: #fff;
+        }
+    }
+}

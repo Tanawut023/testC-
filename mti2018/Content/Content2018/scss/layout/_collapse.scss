@@ -1,0 +1,480 @@
+﻿// Compare
+    // Left
+.section-column-left{
+    .topic-collapse{
+        position: relative;
+        margin-bottom: 0 !important;
+        .txt{
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            color: #fff;
+            line-height: 25px;
+        }
+        .icon{
+            float: right;
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            top: 13px;
+            right: 10px;
+        }
+    }
+
+    // Service
+    .sec-content-service{
+        margin: 15px 0 0;
+        .row{
+           .form-group{
+               margin-bottom: 15px;
+           }
+        }
+    }
+}
+
+
+// Review Order
+.detail-revieworder-collapse {
+    //padding-bottom: 10px;
+    position: relative;
+    .title-collapse {
+        margin: 20px 0;
+        background-color: $color-blue;
+        padding: 7px 10px;
+
+        @media screen and (max-width: 999px) {
+            margin: 0 0 20px;
+        }
+
+        .txt {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 25px;
+            color: #ffffff;
+        }
+
+        .icon {
+            float: right;
+            font-size: 18px;
+            color: #666666;
+            transform: scale(2,1.5);
+            position: relative;
+            right: 7px;
+        }
+        .icon.-white{
+            float: right;
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+
+    .collapse-chk {
+        background-color: #F7F7F7;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .text-chk {
+            width: 42.5%;
+            float: left;
+            @media screen and (max-width: 480px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .text-price {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 25px;
+            color: #666666;
+
+            .price {
+                font-size: 46px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+            }
+
+            .point {
+                font-size: 23px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+                position: relative;
+                top: 5px;
+            }
+            .current {
+                font-size: 23px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+    .collapse-other {
+        margin: 0 0 20px;
+    }
+    
+
+    .result-box-promotion {
+        //margin-top: 20px;
+        .result-title {
+            font-family: $font-main;
+            font-size: $font-medium;
+            color: $color-blue;
+        }
+
+        .list-voucher {
+            ul {
+                margin: 0 0 30px;
+                padding: 0;
+
+                li {
+                    background-color: #fff;
+                    border: 1px solid #f7f7f7;
+                    padding: 10px 20px;
+                    float: left;
+                    vertical-align: middle;
+                    //width: 185px;
+                    width: 25%;
+                    height: 165px;
+
+                    .icon-voucher {
+                        margin: 10px 0;
+                        text-align: center;
+                    }
+
+                    .txt-title-promotion {
+                        font-family: $font-main;
+                        font-size: 28px;
+                        color: $color-blue;
+                        line-height: 28px;
+                        text-align: center;
+                    }
+
+                    .txt-detail {
+                        font-family: $font-main;
+                        font-size: 22px;
+                        color: #666666;
+                        width: auto;
+                        text-align: center;
+                        line-height: 22px;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        width: 50%;
+
+                        .txt-title-promotion {
+                            text-align: center;
+                        }
+
+                        .txt-detail {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Form-Owner
+.detail-owner-collapse {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
+
+    .title-collapse {
+        margin: 0 0 20px;
+        background-color: #1595d3;
+        padding: 7px 10px;
+
+        @media (max-width: 999px) {
+            margin: 0 0 20px;
+        }
+
+        .txt {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            color: #fff;
+            line-height: 25px;
+        }
+
+        .icon {
+            float: right;
+            font-size: 20px;
+            color: #fff;
+            transform: scale(2,1.5);
+            position: relative;
+            right: 7px;
+        }
+    }
+}
+
+
+// report 
+.detail-report-collapse {
+    //padding-bottom: 10px;
+    position: relative;
+    .title-collapse {
+        margin: 0 0 20px;
+        background-color: $color-blue;
+        padding: 7px 10px;
+
+        @media screen and (max-width: 999px) {
+            margin: 0 0 20px;
+        }
+
+        .txt {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 25px;
+            color: #ffffff;
+        }
+
+        .icon {
+            float: right;
+            font-size: 18px;
+            color: #666666;
+            transform: scale(2,1.5);
+            position: relative;
+            right: 7px;
+        }
+        .icon.-white{
+            float: right;
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+
+    .collapse-chk {
+        background-color: #F7F7F7;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .text-chk {
+            width: 42.5%;
+            float: left;
+            @media screen and (max-width: 480px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .text-price {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 25px;
+            color: #666666;
+
+            .price {
+                font-size: 46px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+            }
+
+            .point {
+                font-size: 23px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+                position: relative;
+                top: 5px;
+            }
+            .current {
+                font-size: 23px;
+                line-height: 26px;
+                color: #999999;
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+    .collapse-other {
+        margin: 0 0 20px;
+    }
+    .result-report{
+        .table-responsive {
+            //padding-top: 15px;
+            .table {
+                thead {
+                    tr {
+                        background-color: #1595d3;
+
+                        th {
+                            font-family: $font-main;
+                            font-size: 26px;
+                            line-height: 26px;
+                            text-align: center;
+                            color: #ffffff;
+                            border: none;
+
+                            &:first-child {
+                                width: 80%;
+                            }
+                        }
+
+                        th.left {
+                            text-align: left;
+                        }
+
+                        th.right {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            border: none;
+                            font-family: $font-main;
+                            font-size: 23px;
+                            line-height: 23px;
+                            color: $color-gray;
+                            text-align: center;
+                            .price{
+                                float: right;
+                                .main-price {
+                                    font-family: $font-main;
+                                    font-size: 46px;
+                                    line-height: 26px;
+                                    color: $color-gray;
+                                    float: left;
+                                }
+                                .point-price {
+                                    font-family: $font-main;
+                                    font-size: 23px;
+                                    line-height: 26px;
+                                    color: $color-gray;
+                                    float: left;
+                                    position: relative;
+                                    top: 5px;
+                                }
+                                .current {
+                                    font-family: $font-main;
+                                    font-size: 23px;
+                                    line-height: 26px;
+                                    color: $color-gray;
+                                    float: left;
+                                    position: relative;
+                                    top: 5px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        td.left {
+                            text-align: left;
+                        }
+
+                        td.right {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.title-collapse.bg-gray{
+    background-color: #F7F7F7;
+    .txt{
+        color: #999999;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .icon.-gray{
+        color: #999999;
+    }
+}
+
+
+
+// Compare
+.detail-compare-collapse {
+    //padding-bottom: 10px;
+    position: relative;
+    .title-collapse {
+        margin: 20px 0;
+        background-color: $color-blue;
+        padding: 7px 10px;
+
+        @media screen and (max-width: 999px) {
+            margin: 0 0 20px;
+        }
+
+        .txt {
+            float: left;
+            font-family: $font-main;
+            font-size: 25px;
+            line-height: 25px;
+            color: #ffffff;
+        }
+
+        .icon {
+            float: right;
+            font-size: 18px;
+            color: #666666;
+            transform: scale(2,1.5);
+            position: relative;
+            right: 7px;
+        }
+        .icon.-white{
+            float: right;
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+
+    .collapse-other {
+        margin: 0 0 10px;
+    }
+
+    .promotion-compare{
+        padding: 0 10px 5px;
+        .list-promotion{
+            padding-left: 25px;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type:disc;
+                li{
+                    margin-bottom: 5px;
+                    font-family: $font-main;
+                    font-size: 21px;
+                    line-height: 21px;
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+}
